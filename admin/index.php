@@ -263,7 +263,9 @@
 
 
 
-
+        case 'login':
+          include 'login.php';
+          break;
 
 
         case 'thongke':

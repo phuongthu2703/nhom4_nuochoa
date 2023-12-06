@@ -1,103 +1,116 @@
+<!--
+=========================================================
+* Argon Dashboard 2 - v2.0.4
+=========================================================
 
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SB Admin 2 - Login</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    Argon Dashboard 2 by Creative Tim
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
 </head>
-<body class="bg-gradient-primary">
 
-    <div class="container">
-
-        <!-- Outer Row -->
-        <div class="row justify-content-center">
-
-            <div class="col-xl-10 col-lg-12 col-md-9">
-
-                <div class="card o-hidden border-0 shadow-lg my-5">
-                    <div class="card-body p-0">
-                        <!-- Nested Row within Card Body -->
-                        <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
-                            <div class="col-lg-6">
-                                <div class="p-5">
-                                    <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Đăng nhập</h1>
-                                    </div>
-                                    <form class="user" method="POST" action="../index.php?act=login">
-                                        <div class="form-group">
-                                            <input type="text" name="user" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="pass" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary btn-user btn-block" name="dangnhap">
-                                            Đăng nhập
-                                        </button>
-                                        <hr>
-                                        <!-- <a href="index.php" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Login with Google
-                                        </a>
-                                        <a href="index.php" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                                        </a> -->
-                                    </form>
-                                    <!-- <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
+<body class="">
+  <div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+        <!-- Navbar -->
+       
+        <!-- End Navbar -->
+      </div>
     </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="../js/sb-admin-2.min.js"></script>
-
+  </div>
+  <main class="main-content  mt-0">
+    <section>
+      <div class="page-header min-vh-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+              <div class="card card-plain">
+                <div class="card-header pb-0 text-start">
+                  <h4 class="font-weight-bolder">Đăng nhập</h4>
+                  <p class="mb-0">Điền email và mật khẩu để đăng nhập admin</p>
+                </div>
+                <div class="card-body">
+                  <form role="form">
+                    <div class="mb-3">
+                      <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                    </div>
+                    <div class="mb-3">
+                      <input type="password" name="pass" class="form-control form-control-lg" placeholder="Mật khẩu" aria-label="Password">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Ghi nhớ mật khẩu</label>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Đăng nhập</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                  <p class="mb-4 text-sm mx-auto">
+                    Bạn chưa có tài khoản?
+                    <a href="javascript:;" class="text-primary text-gradient font-weight-bold">Đăng ký</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('https://scr.vn/wp-content/uploads/2020/07/%E1%BA%A3nh-n%E1%BB%81n-nh%E1%BB%AFng-%C4%91%C3%A1m-m%C3%A2y-cute.jpg');
+          background-size: cover;">
+                <span class="mask bg-gradient-primary opacity-6"></span>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/argon-dashboard.min.js?v=2.0.4"></script>
 </body>
 
 </html>
