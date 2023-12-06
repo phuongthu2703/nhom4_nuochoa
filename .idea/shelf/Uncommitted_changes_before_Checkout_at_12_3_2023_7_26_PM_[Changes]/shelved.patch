@@ -1,0 +1,1343 @@
+Index: client/components/category.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n<style>\r\n  li{\r\n    text-decoration: none; \r\n  }  \r\n</style>\r\n\r\n<div class=\"col-3\">\r\n  \r\n \r\n  <div class=\"\">\r\n    <div class=\"\">\r\n      <div class=\"text-center\"><h4>Top 10 yêu thích</h4></div>\r\n      <div>\r\n        <?php\r\n        foreach ($dstop10 as $sp) {\r\n          extract($sp);\r\n          $linksp = \"index.php?act=sanphamct&product_ID=\" . $product_ID;\r\n          $image = $image_path . $image;\r\n          echo '<div style=\"margin-top: 11px;\">\r\n         \r\n      <img src=\"' . $image . '\" class=\"rounded-circle border border-primary\" alt=\"\" style=\"width: 60px;\" >\r\n      <a href=\"' . $linksp . '\" >' . $name . '</a>\r\n  </div>';\r\n        }\r\n        ?>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n\r\n  \r\n</div>\r\n\r\n\r\n\r\n
+===================================================================
+diff --git a/client/components/category.php b/client/components/category.php
+--- a/client/components/category.php	
++++ b/client/components/category.php	
+@@ -6,8 +6,48 @@
+ </style>
+ 
+ <div class="col-3">
+-  
++
+  
++        
++      <form action="index.php?act=product_cate" method="post"class="d-flex">
++        <input style="border:2px solid #f89cab;" type="search"  name="kyw" class="form-control" placeholder="Tìm Kiếm" />
++        <button style=" background-color: palevioletred; color: antiquewhite; ;  border: none; border-radius: 4px; width: 5rem; " type="submit" name="timkiem" ><i class="fa fa-search"></i></button>
++    </form>
++
++      
++      <div>
++      <table class="table align-items-center mb-0"> 
++      <tr>
++                        <th>Thương Hiệu</th>
++                        <th></th>
++                        </tr>
++      <?php
++             foreach ($dsdm as $dm) {
++             extract($dm);
++                $linkdm = "index.php?act=product_cate&category_ID=" . $category_ID;
++                $image=$image_path.$image;
++           
++          
++          
++                        echo '<tr>
++                      
++                        <td>
++                      
++                       
++                        <label>'.$name.'</label>
++                      
++                      
++                      </td> 
++                      <td>   <a class="" href="'.$linkdm.'"><i class="fa fa-eye"></i>_Xem</a>
++                      </td>
++                     
++                      </tr>
++                     ';
++                                 }
++                        ?>
++                         </table>
++
++</div>
+   <div class="">
+     <div class="">
+       <div class="text-center"><h4>Top 10 yêu thích</h4></div>
+@@ -19,7 +59,7 @@
+           $image = $image_path . $image;
+           echo '<div style="margin-top: 11px;">
+          
+-      <img src="' . $image . '" class="rounded-circle border border-primary" alt="" style="width: 60px;" >
++      <img src="' . $image . '" class="rounded-circle border border-primary" alt="" style="width: 60px; height: 60px;" >
+       <a href="' . $linksp . '" >' . $name . '</a>
+   </div>';
+         }
+@@ -28,9 +68,11 @@
+     </div>
+ 
+   </div>
++  
+ 
+   
+ </div>
+ 
+ 
+ 
++
+Index: client/components/gallery.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>iCREAM - Ice Cream Shop Website Template</title>\r\n    <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\r\n    <meta content=\"Free HTML Templates\" name=\"keywords\">\r\n    <meta content=\"Free HTML Templates\" name=\"description\">\r\n\r\n    <!-- Favicon -->\r\n    <link href=\"img/favicon.ico\" rel=\"icon\">\r\n\r\n    <!-- Google Web Fonts -->\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\r\n    <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap\" rel=\"stylesheet\">\r\n\r\n    <!-- Font Awesome -->\r\n    <link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Libraries Stylesheet -->\r\n    <link href=\"lib/owlcarousel/assets/owl.carousel.min.css\" rel=\"stylesheet\">\r\n    <link href=\"lib/lightbox/css/lightbox.min.css\" rel=\"stylesheet\">\r\n\r\n    <!-- Customized Bootstrap Stylesheet -->\r\n    <link href=\"css/style.css\" rel=\"stylesheet\">\r\n</head>\r\n\r\n<body>\r\n    \r\n\r\n\r\n    <!-- Header Start -->\r\n    <div class=\"jumbotron jumbotron-fluid page-header\" style=\"margin-bottom: 90px;\">\r\n        <div class=\"container text-center py-5\">\r\n            <h1 class=\"text-white display-3 mt-lg-5\">Bán chạy</h1>\r\n            <div class=\"d-inline-flex align-items-center text-white\">\r\n                <p class=\"m-0\"><a class=\"text-white\" href=\"\">Trang chủ</a></p>\r\n                <i class=\"fa fa-circle px-3\"></i>\r\n                <p class=\"m-0\">Bán chạy</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Header End -->\r\n\r\n\r\n    <!-- Portfolio Start -->\r\n    <div class=\"container-fluid py-5 px-0\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row justify-content-center\">\r\n                <div class=\"col-lg-5\">\r\n                    <h1 class=\"section-title position-relative text-center mb-5\">Thương hiệu</h1>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col-12 text-center\">\r\n                    <ul class=\"list-inline mb-4 pb-2\" id=\"portfolio-flters\">\r\n                        <li class=\"btn btn-sm btn-outline-primary m-1 active\"  data-filter=\"*\">Tất cả</li>\r\n                        <li class=\"btn btn-sm btn-outline-primary m-1\" data-filter=\".first\">Charme</li>\r\n                        <li class=\"btn btn-sm btn-outline-primary m-1\" data-filter=\".second\">Adopt</li>\r\n                        <li class=\"btn btn-sm btn-outline-primary m-1\" data-filter=\".third\">Chanel</li>\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n            <div class=\"row m-0 portfolio-container\">\r\n                <div class=\"col-lg-4 col-md-6 p-0 portfolio-item first\">\r\n                    <div class=\"position-relative overflow-hidden\">\r\n                        <img class=\"img-fluid w-100\" src=\"../upload/Charme/Charme Good Girl.jpg\" alt=\"\">\r\n                        <a class=\"portfolio-btn\" href=\"../upload/Charme/Charme Good Girl.jpg\" data-lightbox=\"portfolio\">\r\n                            <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 p-0 portfolio-item second\">\r\n                    <div class=\"position-relative overflow-hidden\">\r\n                        <img class=\"img-fluid w-100\" src=\"img/portfolio-2.jpg\" alt=\"\">\r\n                        <a class=\"portfolio-btn\" href=\"img/portfolio-2.jpg\" data-lightbox=\"portfolio\">\r\n                            <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 p-0 portfolio-item third\">\r\n                    <div class=\"position-relative overflow-hidden\">\r\n                        <img class=\"img-fluid w-100\" src=\"img/portfolio-3.jpg\" alt=\"\">\r\n                        <a class=\"portfolio-btn\" href=\"img/portfolio-3.jpg\" data-lightbox=\"portfolio\">\r\n                            <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 p-0 portfolio-item first\">\r\n                    <div class=\"position-relative overflow-hidden\">\r\n                        <img class=\"img-fluid w-100\" src=\"img/portfolio-4.jpg\" alt=\"\">\r\n                        <a class=\"portfolio-btn\" href=\"img/portfolio-4.jpg\" data-lightbox=\"portfolio\">\r\n                            <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 p-0 portfolio-item second\">\r\n                    <div class=\"position-relative overflow-hidden\">\r\n                        <img class=\"img-fluid w-100\" src=\"img/portfolio-5.jpg\" alt=\"\">\r\n                        <a class=\"portfolio-btn\" href=\"img/portfolio-5.jpg\" data-lightbox=\"portfolio\">\r\n                            <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 col-md-6 p-0 portfolio-item third\">\r\n                    <div class=\"position-relative overflow-hidden\">\r\n                        <img class=\"img-fluid w-100\" src=\"img/portfolio-6.jpg\" alt=\"\">\r\n                        <a class=\"portfolio-btn\" href=\"img/portfolio-6.jpg\" data-lightbox=\"portfolio\">\r\n                            <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Portfolio End -->\r\n\r\n\r\n\r\n\r\n    <!-- Back to Top -->\r\n    <a href=\"#\" class=\"btn btn-secondary px-2 back-to-top\"><i class=\"fa fa-angle-double-up\"></i></a>\r\n\r\n\r\n    <!-- JavaScript Libraries -->\r\n    <script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>\r\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js\"></script>\r\n    <script src=\"lib/easing/easing.min.js\"></script>\r\n    <script src=\"lib/waypoints/waypoints.min.js\"></script>\r\n    <script src=\"lib/owlcarousel/owl.carousel.min.js\"></script>\r\n    <script src=\"lib/isotope/isotope.pkgd.min.js\"></script>\r\n    <script src=\"lib/lightbox/js/lightbox.min.js\"></script>\r\n\r\n    <!-- Contact Javascript File -->\r\n    <script src=\"mail/jqBootstrapValidation.min.js\"></script>\r\n    <script src=\"mail/contact.js\"></script>\r\n\r\n    <!-- Template Javascript -->\r\n    <script src=\"js/main.js\"></script>\r\n</body>\r\n\r\n</html>
+===================================================================
+diff --git a/client/components/gallery.php b/client/components/gallery.php
+--- a/client/components/gallery.php	
++++ b/client/components/gallery.php	
+@@ -1,46 +1,14 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+-<head>
+-    <meta charset="utf-8">
+-    <title>iCREAM - Ice Cream Shop Website Template</title>
+-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+-    <meta content="Free HTML Templates" name="keywords">
+-    <meta content="Free HTML Templates" name="description">
+-
+-    <!-- Favicon -->
+-    <link href="img/favicon.ico" rel="icon">
+-
+-    <!-- Google Web Fonts -->
+-    <link rel="preconnect" href="https://fonts.gstatic.com">
+-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+-
+-    <!-- Font Awesome -->
+-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ 
+-    <!-- Libraries Stylesheet -->
+-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+-
+-    <!-- Customized Bootstrap Stylesheet -->
+-    <link href="css/style.css" rel="stylesheet">
+-</head>
+ 
+ <body>
+     
+ 
+ 
+     <!-- Header Start -->
+-    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+-        <div class="container text-center py-5">
+-            <h1 class="text-white display-3 mt-lg-5">Bán chạy</h1>
+-            <div class="d-inline-flex align-items-center text-white">
+-                <p class="m-0"><a class="text-white" href="">Trang chủ</a></p>
+-                <i class="fa fa-circle px-3"></i>
+-                <p class="m-0">Bán chạy</p>
+-            </div>
+-        </div>
+-    </div>
++
+     <!-- Header End -->
+ 
+ 
+Index: client/components/header.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+> <!-- Topbar Start -->\r\n\r\n <div class=\"container-fluid bg-primary py-3 d-none d-md-block\">\r\n        <div class=\"container\">\r\n            <div class=\"row\">\r\n                <div class=\"col-md-6 text-center text-lg-left mb-2 mb-lg-0\">\r\n                    <div class=\"d-inline-flex align-items-center\">\r\n                        <a class=\"text-white pr-3\" href=\"\">FAQs</a>\r\n                        <span class=\"text-white\">|</span>\r\n                        <a class=\"text-white px-3\" href=\"\">Giúp đỡ</a>\r\n                        <span class=\"text-white\">|</span>\r\n                        <a class=\"text-white pl-3\" href=\"\">Liên hệ</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-6 text-center text-lg-right\">\r\n                    <div class=\"d-inline-flex align-items-center\">\r\n                        <a class=\"text-white px-3\" href=\"\">\r\n                            <i class=\"fab fa-facebook-f\"></i>\r\n                        </a>\r\n                        <a class=\"text-white px-3\" href=\"\">\r\n                            <i class=\"fab fa-twitter\"></i>\r\n                        </a>\r\n                        <a class=\"text-white px-3\" href=\"\">\r\n                            <i class=\"fab fa-linkedin-in\"></i>\r\n                        </a>\r\n                        <a class=\"text-white px-3\" href=\"\">\r\n                            <i class=\"fab fa-instagram\"></i>\r\n                        </a>\r\n                        <a class=\"text-white pl-3\" href=\"\">\r\n                            <i class=\"fab fa-youtube\"></i>\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Topbar End -->\r\n\r\n\r\n    <!-- Navbar Start -->\r\n    <div class=\"container-fluid position-relative nav-bar p-0\">\r\n        <div class=\"container-lg position-relative p-0 px-lg-3\" style=\"z-index: 9;\">\r\n            <nav class=\"navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0\">\r\n                <a href=\"index.html\" class=\"navbar-brand d-block d-lg-none\">\r\n                    <h1 class=\"m-0 display-4 text-primary\"><span class=\"text-secondary\">Candy</span>Cloud</h1>\r\n                </a>\r\n                <button type=\"button\" class=\"navbar-toggler\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\">\r\n                    <span class=\"navbar-toggler-icon\"></span>\r\n                </button>\r\n                <div class=\"collapse navbar-collapse justify-content-between\" id=\"navbarCollapse\">\r\n                    <div class=\"navbar-nav ml-auto py-0\">\r\n                        <a href=\"index.php\" class=\"nav-item nav-link\">Trang chủ</a>\r\n                        <a href=\"index.php?act=gioithieu\" class=\"nav-item nav-link\">Giới thiệu</a>\r\n                        <a href=\"index.php?act=sanphamall\" class=\"nav-item nav-link\">Sản phẩm</a>\r\n                    </div>\r\n                    <a href=\"index.html\" class=\"navbar-brand mx-5 d-none d-lg-block\">\r\n                        <h1 class=\"m-0 display-4 text-primary\"><span class=\"text-secondary\">Candy</span>Cloud</h1>\r\n                    </a>\r\n                    <div class=\"navbar-nav mr-auto py-0\">\r\n                        <a href=\"index.php?act=gallery\" class=\"nav-item nav-link\">Bài viết</a>\r\n                        <a href=\"index.php?act=lienhe\" class=\"nav-item nav-link\">Liên hệ</a>\r\n                        <a href=\"index.php?act=sanphamall\" class=\"nav-item nav-link\">Giỏ hàng</a>\r\n                    </div>\r\n                </div>\r\n            </nav>\r\n        </div>\r\n    </div>\r\n   \r\n    <!-- Navbar End -->\r\n\r\n\r\n    <!-- Carousel Start -->\r\n   \r\n    <!-- Carousel End -->\r\n\r\n\r\n    <!-- About Start -->\r\n    
+===================================================================
+diff --git a/client/components/header.php b/client/components/header.php
+--- a/client/components/header.php	
++++ b/client/components/header.php	
+@@ -1,6 +1,5 @@
+- <!-- Topbar Start -->
+-
+- <div class="container-fluid bg-primary py-3 d-none d-md-block">
++<header>
++<div class="container-fluid bg-primary py-3 d-none d-md-block">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+@@ -58,14 +57,15 @@
+                     </a>
+                     <div class="navbar-nav mr-auto py-0">
+                         <a href="index.php?act=gallery" class="nav-item nav-link">Bài viết</a>
+-                        <a href="index.php?act=lienhe" class="nav-item nav-link">Liên hệ</a>
+-                        <a href="index.php?act=sanphamall" class="nav-item nav-link">Giỏ hàng</a>
++                        <a href="index.php?act=mybill" class="nav-item nav-link">Liên hệ</a>
++                        <a href="index.php?act=viewcart" class="nav-item nav-link">Giỏ hàng</a>
++                        
+                     </div>
+                 </div>
+             </nav>
+         </div>
+     </div>
+-   
++    </header>
+     <!-- Navbar End -->
+ 
+ 
+Index: client/components/binhluan/binhluanform.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\nsession_start();\r\n\r\ninclude  \"../../../admin/model/pdo.php\";\r\ninclude \"../../../admin/model/binhluan.php\";\r\n\r\n\r\n\r\n\r\n$idpro = $_REQUEST['idpro'];\r\n\r\n$dsbl = loadall_binhluan($idpro);\r\n?>\r\n\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n\r\n<body>\r\n    <div class=\"card\">\r\n        <div class=\"card-header\"><h5>BÌNH LUẬN</h5> </div>\r\n        <div class=\"\">\r\n            <table class=\"table table-striped table-bordered\">\r\n            <tr>\r\n                   \r\n                    <th>Nội dung</th>\r\n                    <!-- <th>ID Khách hàng</th> -->\r\n                    <th>Ngày</th>\r\n                    \r\n                    \r\n                </tr>\r\n                <?php\r\n// <td>' . $iduser . '</td>;\r\n                foreach ($dsbl as $bl) {\r\n                    extract($bl);\r\n                    echo '<tr>\r\n                    <td>' . $noidung . '</td>;\r\n                    \r\n                    <td>' . $ngaybinhluan . '</td>\r\n                    </tr>';\r\n                }\r\n                ?>\r\n            </table>\r\n        </div>\r\n        <div class=\"\">\r\n\r\n            <form action=\"<?= $_SERVER['PHP_SELF']; ?>\" method=\"post\">\r\n                <input type=\"hidden\" name=\"idpro\" value=\"<?=$idpro?>\">\r\n\r\n                <input type=\"text\" name=\"noidung\" style=\"background-color:white;  width: 70%; height: 40px;  border-radius: 5px;\" >\r\n                <input type=\"submit\" style=\"background-color:lightcoral; color: beige; border: none;  width: 20%; height: 40px; border-radius: 5px;\" name=\"guibinhluan\" value=\"Gửi bình luận\">\r\n            </form>\r\n        </div>\r\n\r\n        <?php \r\n        if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])){\r\n            $noidung=$_POST['noidung'];\r\n            $idpro=$_POST['idpro'];\r\n            $iduser = $_SESSION[\"user\"]['id'];\r\n            $ngaybinhluan=date('h:i:sa d/m/Y');\r\n            insert_binhluan($noidung, $iduser, $idpro, $ngaybinhluan);\r\n            header(\"Location:\". $_SERVER['HTTP_REFERER']);\r\n        }\r\n        ?>\r\n\r\n    </div>\r\n</body>\r\n\r\n</html>
+===================================================================
+diff --git a/client/components/binhluan/binhluanform.php b/client/components/binhluan/binhluanform.php
+--- a/client/components/binhluan/binhluanform.php	
++++ b/client/components/binhluan/binhluanform.php	
+@@ -1,15 +1,15 @@
+ <?php
+ session_start();
+ 
+-include  "../../../admin/model/pdo.php";
+-include "../../../admin/model/binhluan.php";
++include  "../../../model/pdo.php";
++include "../../../model/binhluan.php";
+ 
+ 
+ 
+ 
+-$idpro = $_REQUEST['idpro'];
++$product_ID = $_REQUEST['product_ID'];
+ 
+-$dsbl = loadall_binhluan($idpro);
++$dsbl = loadall_binhluan($product_ID);
+ ?>
+ 
+ <html lang="en">
+@@ -27,8 +27,9 @@
+             <table class="table table-striped table-bordered">
+             <tr>
+                    
++                    
++                    <th>ID Khách hàng</th>
+                     <th>Nội dung</th>
+-                    <!-- <th>ID Khách hàng</th> -->
+                     <th>Ngày</th>
+                     
+                     
+@@ -38,9 +39,10 @@
+                 foreach ($dsbl as $bl) {
+                     extract($bl);
+                     echo '<tr>
+-                    <td>' . $noidung . '</td>;
++                    <td>'.$customer_ID.'</td>
++                    <td>' . $content . '</td>;
+                     
+-                    <td>' . $ngaybinhluan . '</td>
++                    <td>' . $date . '</td>
+                     </tr>';
+                 }
+                 ?>
+@@ -49,20 +51,20 @@
+         <div class="">
+ 
+             <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+-                <input type="hidden" name="idpro" value="<?=$idpro?>">
++                <input type="hidden" name="product_ID" value="<?=$product_ID?>">
+ 
+-                <input type="text" name="noidung" style="background-color:white;  width: 70%; height: 40px;  border-radius: 5px;" >
++                <input type="text" name="content" style="background-color:white;  width: 70%; height: 40px;  border-radius: 5px;" >
+                 <input type="submit" style="background-color:lightcoral; color: beige; border: none;  width: 20%; height: 40px; border-radius: 5px;" name="guibinhluan" value="Gửi bình luận">
+             </form>
+         </div>
+ 
+         <?php 
+         if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])){
+-            $noidung=$_POST['noidung'];
+-            $idpro=$_POST['idpro'];
+-            $iduser = $_SESSION["user"]['id'];
+-            $ngaybinhluan=date('h:i:sa d/m/Y');
+-            insert_binhluan($noidung, $iduser, $idpro, $ngaybinhluan);
++            $content=$_POST['content'];
++            $product_ID=$_POST['product_ID'];
++            $customer_ID = $_SESSION['name']['customer_ID'];
++            $date=date('h:i:sa d/m/Y');
++            insert_binhluan($content, $customer_ID, $product_ID, $date);
+             header("Location:". $_SERVER['HTTP_REFERER']);
+         }
+         ?>
+Index: client/components/home.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><body>\r\n<div class=\"container-fluid p-0 mb-5 pb-5\">\r\n        <div id=\"header-carousel\" class=\"carousel slide\" data-ride=\"carousel\">\r\n            <div class=\"carousel-inner\">\r\n                <div class=\"carousel-item active\">\r\n                    <img class=\"w-100\" src=\"img/b2.jpg\" alt=\"Image\" style=\"height: 1100px\">\r\n                    <div class=\"carousel-caption d-flex flex-column align-items-center justify-content-center\">\r\n                        <div class=\"p-3\" style=\"max-width: 900px;\">\r\n                            <h4 class=\"text-white text-uppercase mb-md-3\">Candy Cloud</h4>\r\n                            <h1 class=\"display-3 text-white mb-md-4\">Bắt nguồn từ đam mê về mùi hương</h1>\r\n                            <a href=\"#\" class=\"btn btn-primary py-md-3 px-md-5 mt-2\">Xem thêm</a>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"carousel-item\">\r\n                    <img class=\"w-100\" src=\"img/pink.png\" alt=\"Image\" style=\"height: 1100px\">\r\n                    <div class=\"carousel-caption d-flex flex-column align-items-center justify-content-center\">\r\n                        <div class=\"p-3\" style=\"max-width: 900px;\">\r\n                            <h4 class=\"text-white text-uppercase mb-md-3\">Candy Cloud</h4>\r\n                            <h1 class=\"display-3 text-white mb-md-4\">với mục tiêu lan toả hương thơm</h1>\r\n                            <a href=\"#\" class=\"btn btn-primary py-md-3 px-md-5 mt-2\">Xem thêm</a>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <a class=\"carousel-control-prev\" href=\"#header-carousel\" data-slide=\"prev\">\r\n                <div class=\"btn btn-secondary px-0\" style=\"width: 45px; height: 45px;\">\r\n                    <span class=\"carousel-control-prev-icon mb-n1\"></span>\r\n                </div>\r\n            </a>\r\n            <a class=\"carousel-control-next\" href=\"#header-carousel\" data-slide=\"next\">\r\n                <div class=\"btn btn-secondary px-0\" style=\"width: 45px; height: 45px;\">\r\n                    <span class=\"carousel-control-next-icon mb-n1\"></span>\r\n                </div>\r\n            </a>\r\n        </div>\r\n    </div>\r\n\r\n<div class=\"container-fluid py-5\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row justify-content-center\">\r\n                <div class=\"col-lg-7\">\r\n               \r\n                    <h1 class=\"section-title position-relative text-center mb-5\">Câu chuyện về <b class=\"m-0 display-4 text-primary\"><span class=\"text-secondary\">Candy</span>Cloud</b></h1>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col-lg-4 py-5\">\r\n                    <h4 class=\"font-weight-bold mb-3\">Giới thiệu</h4>\r\n                    \r\n                    <p><b class=\"text-primary\"><span class=\"text-secondary\">Candy</span>Cloud</b> là một tiệm nước hoa nho nhỏ bắt nguồn từ đam mê về mùi hương cũng như việc mong muốn chia sẻ với tất cả các bạn về sở thích của tụi mình, đồng thời tạo ra một nơi giúp mọi người dễ dàng sở hữu bất cứ chai nước hoa nào bạn muốn. và rồi cứ thế, với mục tiêu lan toả hương thơm và niềm đam mê mà CandyCloud lớn lên và được tin tưởng hơn mỗi ngày.</p>\r\n                    <a href=\"index.php?act=gioithieu\" class=\"btn btn-secondary mt-2\">Xem thêm</a>\r\n                </div>\r\n                <div class=\"col-lg-4\" style=\"min-height: 400px;\">\r\n                    <div class=\"position-relative h-100 rounded overflow-hidden\">\r\n                        <img class=\"position-absolute w-100 h-100\" src=\"img/b5.jpg\" style=\"object-fit: cover;\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-4 py-5\">\r\n                    <h4 class=\"font-weight-bold mb-3\">Uy tín</h4>\r\n                    <p>Luôn đặt chất lượng và lòng tin với khách hàng lên hàng đầu. Tụi mình sẽ không cam kết bán giá rẻ nhất và cạnh tranh với các bên khác mà chỉ cam kết sẽ bán giá tốt nhất chúng mình có thể.</p>\r\n                    <h5 class=\"text-muted mb-3\"><i class=\"fa fa-check text-secondary mr-3\"></i>Sản phẩm chính hãng 100%</h5>\r\n                    <h5 class=\"text-muted mb-3\"><i class=\"fa fa-check text-secondary mr-3\"></i>Giá cả hợp lý</h5>\r\n                    <h5 class=\"text-muted mb-3\"><i class=\"fa fa-check text-secondary mr-3\"></i>Đưa ra lời khuyên thực tế</h5>\r\n                    <a href=\"index.php?act=gioithieu\" class=\"btn btn-primary mt-2\">Xem thêm</a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- About End -->\r\n    <!-- Promotion Start -->\r\n    <div class=\"container-fluid my-5 py-5 px-0\">\r\n        <div class=\"row bg-primary m-0\">\r\n            <div class=\"col-md-6 px-0\" style=\"min-height: 500px;\">\r\n                <div class=\"position-relative h-100\">\r\n                    <img class=\"position-absolute w-100 h-100\" src=\"img/jisoo.jpg\" style=\"object-fit: cover;\">\r\n                    <button type=\"button\" class=\"btn-play\" data-toggle=\"modal\"\r\n                        data-src=\"https://www.youtube.com/embed/DWRcNpR6Kdc\" data-target=\"#videoModal\">\r\n                        <span></span>\r\n                    </button>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-md-6 py-5 py-md-0 px-0\">\r\n                <div class=\"h-100 d-flex flex-column align-items-center justify-content-center text-center p-5\">\r\n                    <div class=\"d-flex align-items-center justify-content-center bg-white rounded-circle mb-4\"\r\n                        style=\"width: 200px; height: 200px;\">\r\n                        <h3 class=\"font-weight-bold text-secondary mb-0\">3.000.000đ</h3>\r\n                    </div>\r\n                    <h3 class=\"font-weight-bold text-white mt-3 mb-4\">Miss Dior</h3>\r\n                    <p class=\"text-white mb-4\">Độ tỏa hương tầm một gang tay tạo sự quyến rũ tiềm ẩn cho các nàng thêm phần quyến rũ và duyên dáng. \r\n                        Lớp hương đầu là mùi của cam Bergamot và quýt hồng, lớp hương giữa có sự nồng nàn của mùi hoa nhài và hoa hồng, lớp hương cuối sẽ thoang thoảng mùi hoắc hương và cỏ hương bài.</p>\r\n                    <a href=\"\" class=\"btn btn-secondary py-3 px-5 mt-2\">Order Now</a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Promotion End -->\r\n\r\n\r\n    <!-- Video Modal Start -->\r\n    <div class=\"modal fade\" id=\"videoModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\r\n        <div class=\"modal-dialog\" role=\"document\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-body\">\r\n                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                        <span aria-hidden=\"true\">&times;</span>\r\n                    </button>        \r\n                    <!-- 16:9 aspect ratio -->\r\n                    <div class=\"embed-responsive embed-responsive-16by9\">\r\n                        <iframe class=\"embed-responsive-item\" src=\"\" id=\"video\" allowscriptaccess=\"always\" allow=\"autoplay\"></iframe>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Video Modal End -->\r\n\r\n\r\n    <!-- Services Start -->\r\n    <div class=\"container-fluid py-5\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row\">\r\n                <div class=\"col-lg-6\">\r\n                    <h1 class=\"section-title position-relative mb-5\">Thương hiệu</h1>\r\n                </div>\r\n                <div class=\"col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0\"></div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col-12\">\r\n                    <div class=\"owl-carousel service-carousel\">\r\n                    <?php\r\n             foreach ($dsdm as $dm) {\r\n             extract($dm);\r\n                $linkdm = \"index.php?act=product_cate&category_ID=\" . $category_ID;\r\n                $image=$image_path.$image;\r\n           \r\n          \r\n          \r\n                        echo '<div class=\"service-item\">\r\n                            <div class=\"service-img mx-auto\">\r\n                                <img class=\"rounded-circle w-100 h-100 bg-light p-3\" src=\"'.$image.'\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <div class=\"position-relative text-center bg-light rounded p-4 pb-5\" style=\"margin-top: -75px;\">\r\n                                <h5 class=\"font-weight-semi-bold mt-5 mb-3 pt-5\">'.$name.'</h5>\r\n                               \r\n                                <a href=\"'.$linkdm.'\" class=\"border-bottom border-secondary text-decoration-none text-secondary\">Xem sản phẩm</a>\r\n                            </div>\r\n                        </div>';\r\n                                 }\r\n                        ?>\r\n                        \r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Services End -->\r\n\r\n\r\n    <!-- Portfolio Start -->\r\n    <div class=\"container-fluid my-5 py-5 px-0\">\r\n        <div class=\"row justify-content-center m-0\">\r\n            <div class=\"col-lg-5\">\r\n                <h1 class=\"section-title position-relative text-center mb-5\">Người nổi tiếng ưa chuộng</h1>\r\n            </div>\r\n        </div>\r\n        <div class=\"row m-0 portfolio-container\">\r\n            <div class=\"col-lg-4 col-md-6 p-0 portfolio-item\">\r\n                <div class=\"position-relative overflow-hidden\">\r\n                    <img class=\"img-fluid w-100\" src=\"img/irene.jpg\" alt=\"\">\r\n                    <a class=\"portfolio-btn\" href=\"img/irene.jpg\" data-lightbox=\"portfolio\">\r\n                        <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-lg-4 col-md-6 p-0 portfolio-item\">\r\n                <div class=\"position-relative overflow-hidden\">\r\n                    <img class=\"img-fluid w-100\" src=\"img/miyeon.jpg\" alt=\"\">\r\n                    <a class=\"portfolio-btn\" href=\"img/miyeon.jpg\" data-lightbox=\"portfolio\">\r\n                        <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-lg-4 col-md-6 p-0 portfolio-item\">\r\n                <div class=\"position-relative overflow-hidden\">\r\n                    <img class=\"img-fluid w-100\" src=\"img/sakura.jpg\" alt=\"\">\r\n                    <a class=\"portfolio-btn\" href=\"img/sakura.jpg\" data-lightbox=\"portfolio\">\r\n                        <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-lg-4 col-md-6 p-0 portfolio-item\">\r\n                <div class=\"position-relative overflow-hidden\">\r\n                    <img class=\"img-fluid w-100\" src=\"img/wonyoung.jpg\" alt=\"\">\r\n                    <a class=\"portfolio-btn\" href=\"img/wonyoung.jpg\" data-lightbox=\"portfolio\">\r\n                        <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-lg-4 col-md-6 p-0 portfolio-item\">\r\n                <div class=\"position-relative overflow-hidden\">\r\n                    <img class=\"img-fluid w-100\" src=\"img/lisa.jpg\" alt=\"\">\r\n                    <a class=\"portfolio-btn\" href=\"img/lisa.jpg\" data-lightbox=\"portfolio\">\r\n                        <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-lg-4 col-md-6 p-0 portfolio-item\">\r\n                <div class=\"position-relative overflow-hidden\">\r\n                    <img class=\"img-fluid w-100\" src=\"img/sullyoon.jpg\" alt=\"\">\r\n                    <a class=\"portfolio-btn\" href=\"img/sullyoon.jpg\" data-lightbox=\"portfolio\">\r\n                        <i class=\"fa fa-plus text-primary\" style=\"font-size: 60px;\"></i>\r\n                    </a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Portfolio End -->\r\n\r\n\r\n    <!-- Products Start -->\r\n    <div class=\"container-fluid py-5\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row\">\r\n                <div class=\"col-lg-6\">\r\n                    <h1 class=\"section-title position-relative mb-5\">Sản phẩm mới nhất</h1>\r\n                </div>\r\n                <div class=\"col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0\"></div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col-12\">\r\n                    <div class=\"owl-carousel product-carousel\">\r\n                       <?php \r\n                        foreach ($spnew as $sp){\r\n                            extract($sp);\r\n                            $linksp =\"index.php?act=sanphamct&product_ID=\".$product_ID;\r\n                            $image=$image_path.$image;\r\n                       \r\n                       echo'\r\n                        <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\" style=\"width: 260px;\">\r\n                            <div class=\"bg-primary mt-n5 py-3\" style=\"width: 124px;\">\r\n                                <h4 class=\"font-weight-bold text-white mb-0\">'.$price.'đ</h4>\r\n                            </div>\r\n                            <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 250px; height: 250px;\">\r\n                                <img class=\"rounded-circle w-100 h-100\" src=\"'.$image.'\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <h5 class=\"font-weight-bold mb-4\">'.$name.'</h5>\r\n                            <a href=\"'.$linksp.'\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                        </div>';\r\n                        }\r\n                        ?>\r\n                        <!-- <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                            <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                                <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                            </div>\r\n                            <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                                <img class=\"rounded-circle w-100 h-100\" src=\"img/product-2.jpg\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                            <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                        </div>\r\n                        <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                            <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                                <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                            </div>\r\n                            <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                                <img class=\"rounded-circle w-100 h-100\" src=\"img/product-3.jpg\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                            <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                        </div>\r\n                        <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                            <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                                <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                            </div>\r\n                            <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                                <img class=\"rounded-circle w-100 h-100\" src=\"img/product-4.jpg\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                            <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                        </div>\r\n                        <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                            <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                                <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                            </div>\r\n                            <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                                <img class=\"rounded-circle w-100 h-100\" src=\"img/product-5.jpg\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                            <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                        </div> -->\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Products End -->\r\n\r\n\r\n    <!-- Team Start -->\r\n    <div class=\"container-fluid py-5\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row\">\r\n                <div class=\"col-lg-6\">\r\n                    <h1 class=\"section-title position-relative mb-5\">Team</h1>\r\n                </div>\r\n                <div class=\"col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0\"></div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col-12\">\r\n                    <div class=\"owl-carousel team-carousel\">\r\n                        <div class=\"team-item\">\r\n                            <div class=\"team-img mx-auto\">\r\n                                <img class=\"rounded-circle w-100 h-100\" src=\"\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <div class=\"position-relative text-center bg-light rounded px-4 py-5\" style=\"margin-top: -100px;\">\r\n                                <h3 class=\"font-weight-bold mt-5 mb-3 pt-5\">Phương Thư</h3>\r\n                                <h6 class=\"text-uppercase text-muted mb-4\">Nhóm trưởng</h6>\r\n                                <div class=\"d-flex justify-content-center pt-1\">\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-twitter\"></i></a>\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-facebook-f\"></i></a>\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-linkedin-in\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"team-item\">\r\n                            <div class=\"team-img mx-auto\">\r\n                                <img class=\"rounded-circle w-100 h-100\" src=\"\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <div class=\"position-relative text-center bg-light rounded px-4 py-5\" style=\"margin-top: -100px;\">\r\n                                <h3 class=\"font-weight-bold mt-5 mb-3 pt-5\">Hiền</h3>\r\n                                <h6 class=\"text-uppercase text-muted mb-4\">Thành viên</h6>\r\n                                <div class=\"d-flex justify-content-center pt-1\">\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-twitter\"></i></a>\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-facebook-f\"></i></a>\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-linkedin-in\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"team-item\">\r\n                            <div class=\"team-img mx-auto\">\r\n                                <img class=\"rounded-circle w-100 h-100\" src=\"\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <div class=\"position-relative text-center bg-light rounded px-4 py-5\" style=\"margin-top: -100px;\">\r\n                                <h3 class=\"font-weight-bold mt-5 mb-3 pt-5\">Mina</h3>\r\n                                <h6 class=\"text-uppercase text-muted mb-4\">Designation</h6>\r\n                                <div class=\"d-flex justify-content-center pt-1\">\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-twitter\"></i></a>\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-facebook-f\"></i></a>\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-linkedin-in\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"team-item\">\r\n                            <div class=\"team-img mx-auto\">\r\n                                <img class=\"rounded-circle w-100 h-100\" src=\"\" style=\"object-fit: cover;\">\r\n                            </div>\r\n                            <div class=\"position-relative text-center bg-light rounded px-4 py-5\" style=\"margin-top: -100px;\">\r\n                                <h3 class=\"font-weight-bold mt-5 mb-3 pt-5\">Coca</h3>\r\n                                <h6 class=\"text-uppercase text-muted mb-4\">Designation</h6>\r\n                                <div class=\"d-flex justify-content-center pt-1\">\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-twitter\"></i></a>\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-facebook-f\"></i></a>\r\n                                    <a class=\"btn btn-outline-secondary btn-social mr-2\" href=\"#\"><i class=\"fab fa-linkedin-in\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Team End -->\r\n\r\n\r\n    <!-- Testimonial Start -->\r\n    <!-- <div class=\"container-fluid py-5\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row justify-content-center\">\r\n                <div class=\"col-lg-6\">\r\n                    <h1 class=\"section-title position-relative text-center mb-5\">Clients Say About Our Famous Ice Cream</h1>\r\n                </div>\r\n            </div>\r\n            <div class=\"row justify-content-center\">\r\n                <div class=\"col-lg-8\">\r\n                    <div class=\"owl-carousel testimonial-carousel\">\r\n                        <div class=\"text-center\">\r\n                            <i class=\"fa fa-3x fa-quote-left text-primary mb-4\"></i>\r\n                            <h4 class=\"font-weight-light mb-4\">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>\r\n                            <img class=\"img-fluid mx-auto mb-3\" src=\"img/testimonial-1.jpg\" alt=\"\">\r\n                            <h5 class=\"font-weight-bold m-0\">Client Name</h5>\r\n                            <span>Profession</span>\r\n                        </div>\r\n                        <div class=\"text-center\">\r\n                            <i class=\"fa fa-3x fa-quote-left text-primary mb-4\"></i>\r\n                            <h4 class=\"font-weight-light mb-4\">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>\r\n                            <img class=\"img-fluid mx-auto mb-3\" src=\"img/testimonial-2.jpg\" alt=\"\">\r\n                            <h5 class=\"font-weight-bold m-0\">Client Name</h5>\r\n                            <span>Profession</span>\r\n                        </div>\r\n                        <div class=\"text-center\">\r\n                            <i class=\"fa fa-3x fa-quote-left text-primary mb-4\"></i>\r\n                            <h4 class=\"font-weight-light mb-4\">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>\r\n                            <img class=\"img-fluid mx-auto mb-3\" src=\"img/testimonial-3.jpg\" alt=\"\">\r\n                            <h5 class=\"font-weight-bold m-0\">Client Name</h5>\r\n                            <span>Profession</span>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div> -->\r\n    \r\n\r\n\r\n\r\n<div class=\"col-3\">\r\n  <div class=\"card\">\r\n    <div class=\"card-body\">\r\n\r\n      <div class=\"text-center\">TÀI KHOẢN</div>\r\n      <?php\r\n      if (isset($_SESSION['name'])&&($_SESSION['image'])) {\r\n        extract($_SESSION['name']);\r\n         $image=$image_path.$image;\r\n       \r\necho'<img src=\"'.$image.'\" class=\"rounded-circle\" style=\"width: 50px; height: 50px;\">\r\n        <span>'.$name.'</span>      '   ;         \r\n        ?>\r\n        \r\n       \r\n         \r\n<div>\r\n          <li>\r\n           <a href=\"index.php?act=quenmk\">Quên mật khẩu</a>\r\n          </li>\r\n          <li>\r\n            <a href=\"index.php?act=edit_taikhoan\">Cập nhật tài khoản</a>\r\n          </li>\r\n          <?php if($role==1){ ?>\r\n          <li>\r\n            <a href=\"../admin/index.php\">Đăng nhập Admin</a>\r\n          </li>\r\n            <?php } ?>\r\n          <li>\r\n            <a href=\"index.php?act=thoat\">Đăng xuất</a>\r\n          </li>\r\n        </div>\r\n        <?php\r\n      } else {\r\n        ?>\r\n        <form action=\"index.php?act=dangnhap\" method=\"post\">\r\n          <div class=\"form-group row\">\r\n            <label>Tên đăng nhập</label>\r\n            <input class=\"form-control\" type=\"text\" name=\"name\">\r\n          </div>\r\n\r\n          <div class=\"form-group row\">\r\n            <label>Mật khẩu</label>\r\n\r\n            <input class=\"form-control\" type=\"password\" name=\"pass\">\r\n          </div>\r\n          <div class=\"form-check\">\r\n\r\n\r\n            <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"\" name=\"\">\r\n            <label class=\"form-check-label\">\r\n              Ghi nhớ tài khoản?\r\n            </label>\r\n          </div>\r\n          <div class=\"form-group row\">\r\n            <input class=\"form-control\" type=\"submit\" value=\"Đăng nhập\" name=\"dangnhap\">\r\n          </div>\r\n        </form>\r\n        <li>\r\n          <a href=\"#\">Quên mật khẩu</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"index.php?act=dangky\">Đăng ký thành viên</a>\r\n        </li>\r\n      <?php } ?>\r\n    </div>\r\n  </div>\r\n\r\n \r\n</div>\r\n</div>\r\n    <!-- Testimonial End -->\r\n\r\n\r\n    <!-- Footer Start -->\r\n  \r\n    <!-- Footer End -->\r\n\r\n\r\n    <!-- Back to Top -->\r\n    <a href=\"#\" class=\"btn btn-secondary px-2 back-to-top\"><i class=\"fa fa-angle-double-up\"></i></a>\r\n\r\n\r\n    <!-- JavaScript Libraries -->\r\n    <script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>\r\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js\"></script>\r\n    <script src=\"lib/easing/easing.min.js\"></script>\r\n    <script src=\"lib/waypoints/waypoints.min.js\"></script>\r\n    <script src=\"lib/owlcarousel/owl.carousel.min.js\"></script>\r\n    <script src=\"lib/isotope/isotope.pkgd.min.js\"></script>\r\n    <script src=\"lib/lightbox/js/lightbox.min.js\"></script>\r\n\r\n    <!-- Contact Javascript File -->\r\n    <script src=\"mail/jqBootstrapValidation.min.js\"></script>\r\n    <script src=\"mail/contact.js\"></script>\r\n\r\n    <!-- Template Javascript -->\r\n    <script src=\"js/main.js\"></script>\r\n</body>
+===================================================================
+diff --git a/client/components/home.php b/client/components/home.php
+--- a/client/components/home.php	
++++ b/client/components/home.php	
+@@ -1,3 +1,11 @@
++<style>
++  ul {
++  list-style-type: none;
++  margin: 0;
++  padding: 0;
++}
++</style>
++
+ <body>
+ <div class="container-fluid p-0 mb-5 pb-5">
+         <div id="header-carousel" class="carousel slide" data-ride="carousel">
+@@ -70,7 +78,7 @@
+     <!-- About End -->
+     <!-- Promotion Start -->
+     <div class="container-fluid my-5 py-5 px-0">
+-        <div class="row bg-primary m-0">
++        <div class="row bg-white m-0">
+             <div class="col-md-6 px-0" style="min-height: 500px;">
+                 <div class="position-relative h-100">
+                     <img class="position-absolute w-100 h-100" src="img/jisoo.jpg" style="object-fit: cover;">
+@@ -81,16 +89,74 @@
+                 </div>
+             </div>
+             <div class="col-md-6 py-5 py-md-0 px-0">
+-                <div class="h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+-                    <div class="d-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+-                        style="width: 200px; height: 200px;">
+-                        <h3 class="font-weight-bold text-secondary mb-0">3.000.000đ</h3>
++            <div class="h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
++            <?php
++      if (isset($_SESSION['name'])) {
++        extract($_SESSION['name']);
++         $image=$image_path.$image;
++       
++echo'
++          
++<div class="team-item">
++<div class="team-img mx-auto">
++                        <img src="'.$image.'" class="rounded-circle w-100 h-100" style="style="object-fit: cover;">
+                     </div>
+-                    <h3 class="font-weight-bold text-white mt-3 mb-4">Miss Dior</h3>
+-                    <p class="text-white mb-4">Độ tỏa hương tầm một gang tay tạo sự quyến rũ tiềm ẩn cho các nàng thêm phần quyến rũ và duyên dáng. 
+-                        Lớp hương đầu là mùi của cam Bergamot và quýt hồng, lớp hương giữa có sự nồng nàn của mùi hoa nhài và hoa hồng, lớp hương cuối sẽ thoang thoảng mùi hoắc hương và cỏ hương bài.</p>
+-                    <a href="" class="btn btn-secondary py-3 px-5 mt-2">Order Now</a>
+-                </div>
++                   
++                    <h3 class="font-weight-bold text-primary mt-3 mb-4">'.$name.'</h3>
++                    <div class="list-group">
++
++         
++          <a href="index.php?act=quenmk" class="list-group-item list-group-item-action list-group-item-warning">Quên mật khẩu</a>
++          
++         
++            <a href="index.php?act=edit_taikhoan" class="list-group-item list-group-item-action list-group-item-warning">Cập nhật tài khoản</a>
++          
++          <?php if($role==1){ ?>
++         
++            <a href="../admin/index.php" class="list-group-item list-group-item-action list-group-item-warning">Đăng nhập Admin</a>
++         
++            <?php } ?>
++          
++            <a href="index.php?act=thoat" class="list-group-item list-group-item-action list-group-item-warning">Đăng xuất</a>
++         
++          </div>
++                  
++                </div> </div>  '   ;         
++        ?>
++        
++                <?php
++      } else {
++        ?>
++        <form action="index.php?act=dangnhap" method="post">
++          <div class="form-group row">
++            <label>Tên đăng nhập</label>
++            <input class="form-control" type="text" name="name" required>
++          </div>
++
++          <div class="form-group row">
++            <label>Mật khẩu</label>
++
++            <input class="form-control" type="password" name="pass" required>
++          </div>
++          <div class="form-check">
++
++
++            <input class="form-check-input" type="checkbox" value="" id="" name="">
++            <label class="form-check-label">
++              Ghi nhớ tài khoản?
++            </label>
++          </div>
++          <div class="form-group row">
++            <input class="form-control" type="submit" value="Đăng nhập" name="dangnhap">
++          </div>
++        </form>
++        <li>
++          <a href="#">Quên mật khẩu</a>
++        </li>
++        <li>
++          <a href="index.php?act=dangky">Đăng ký thành viên</a>
++        </li>
++      <?php } ?>
+             </div>
+         </div>
+     </div>
+@@ -228,8 +294,8 @@
+                 <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+             </div>
+             <div class="row">
+-                <div class="col-12">
+-                    <div class="owl-carousel product-carousel">
++                <!-- <div class="col-12">
++                    <div class="owl-carousel product-carousel"> -->
+                        <?php 
+                         foreach ($spnew as $sp){
+                             extract($sp);
+@@ -237,16 +303,26 @@
+                             $image=$image_path.$image;
+                        
+                        echo'
+-                        <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3" style="width: 260px;">
+-                            <div class="bg-primary mt-n5 py-3" style="width: 124px;">
+-                                <h4 class="font-weight-bold text-white mb-0">'.$price.'đ</h4>
+-                            </div>
+-                            <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 250px; height: 250px;">
+-                                <img class="rounded-circle w-100 h-100" src="'.$image.'" style="object-fit: cover;">
+-                            </div>
+-                            <h5 class="font-weight-bold mb-4">'.$name.'</h5>
+-                            <a href="'.$linksp.'" class="btn btn-sm btn-secondary">Order Now</a>
+-                        </div>';
++                       
++                       <div class="col-lg-3 col-md-6 mb-4 pb-2">
++                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
++                       
++                        <a href="'.$linksp.'">
++                        <div class="position-relative rounded mt-n3 mb-4 p-3" style="width: 200px; height: 200px;">
++                            <img class="rounded w-100 h-100" src="'.$image.'" style="object-fit: cover;">
++                        </div>
++                        </a>
++                        <h5 class="font-weight-bold mb-4">'.$name.'</h5>
++                        <h5 class="font-weight-bold text-primary mb-4">'.$price.'đ</h5>
++                        <form action="index.php?act=addtocart" method="post">
++                        <input type="hidden" name="product_ID" value="'.$product_ID.'">
++                        <input type="hidden" name="name" value="'.$name.'">
++                        <input type="hidden" name="image" value="'.$image.'">
++                        <input type="hidden" name="price" value="'.$price.'">
++                        <input type="submit" name="addtocart" class="btn btn-sm btn-secondary" value="Đặt hàng">
++                        </form>
++                    </div>
++                </div>';
+                         }
+                         ?>
+                         <!-- <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+@@ -309,21 +385,26 @@
+             <div class="row">
+                 <div class="col-12">
+                     <div class="owl-carousel team-carousel">
+-                        <div class="team-item">
++                       <?php 
++                        foreach ($dstk as $tk){
++                            extract($tk);
++                            $linksp ="index.php?act=sanphamct&product_ID=".$product_ID;
++                            $image=$image_path.$image;
++                       echo '<div class="team-item">
+                             <div class="team-img mx-auto">
+-                                <img class="rounded-circle w-100 h-100" src="" style="object-fit: cover;">
++                                <img class="rounded-circle w-100 h-100" src="'.$image.'" style="object-fit: cover;">
+                             </div>
+                             <div class="position-relative text-center bg-light rounded px-4 py-5" style="margin-top: -100px;">
+-                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Phương Thư</h3>
+-                                <h6 class="text-uppercase text-muted mb-4">Nhóm trưởng</h6>
++                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">'.$name.'</h3>
++                                <h6 class="text-uppercase text-muted mb-4">'.$address.'</h6>
+                                 <div class="d-flex justify-content-center pt-1">
+                                     <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                     <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                     <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                 </div>
+                             </div>
+-                        </div>
+-                        <div class="team-item">
++                        </div>';}?>
++                        <!-- <div class="team-item">
+                             <div class="team-img mx-auto">
+                                 <img class="rounded-circle w-100 h-100" src="" style="object-fit: cover;">
+                             </div>
+@@ -364,7 +445,7 @@
+                                     <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                 </div>
+                             </div>
+-                        </div>
++                        </div> -->
+                     </div>
+                 </div>
+             </div>
+@@ -414,76 +495,7 @@
+ 
+ 
+ 
+-<div class="col-3">
+-  <div class="card">
+-    <div class="card-body">
+-
+-      <div class="text-center">TÀI KHOẢN</div>
+-      <?php
+-      if (isset($_SESSION['name'])&&($_SESSION['image'])) {
+-        extract($_SESSION['name']);
+-         $image=$image_path.$image;
+-       
+-echo'<img src="'.$image.'" class="rounded-circle" style="width: 50px; height: 50px;">
+-        <span>'.$name.'</span>      '   ;         
+-        ?>
+-        
+-       
+-         
+-<div>
+-          <li>
+-           <a href="index.php?act=quenmk">Quên mật khẩu</a>
+-          </li>
+-          <li>
+-            <a href="index.php?act=edit_taikhoan">Cập nhật tài khoản</a>
+-          </li>
+-          <?php if($role==1){ ?>
+-          <li>
+-            <a href="../admin/index.php">Đăng nhập Admin</a>
+-          </li>
+-            <?php } ?>
+-          <li>
+-            <a href="index.php?act=thoat">Đăng xuất</a>
+-          </li>
+-        </div>
+-        <?php
+-      } else {
+-        ?>
+-        <form action="index.php?act=dangnhap" method="post">
+-          <div class="form-group row">
+-            <label>Tên đăng nhập</label>
+-            <input class="form-control" type="text" name="name">
+-          </div>
+-
+-          <div class="form-group row">
+-            <label>Mật khẩu</label>
+ 
+-            <input class="form-control" type="password" name="pass">
+-          </div>
+-          <div class="form-check">
+-
+-
+-            <input class="form-check-input" type="checkbox" value="" id="" name="">
+-            <label class="form-check-label">
+-              Ghi nhớ tài khoản?
+-            </label>
+-          </div>
+-          <div class="form-group row">
+-            <input class="form-control" type="submit" value="Đăng nhập" name="dangnhap">
+-          </div>
+-        </form>
+-        <li>
+-          <a href="#">Quên mật khẩu</a>
+-        </li>
+-        <li>
+-          <a href="index.php?act=dangky">Đăng ký thành viên</a>
+-        </li>
+-      <?php } ?>
+-    </div>
+-  </div>
+-
+- 
+-</div>
+ </div>
+     <!-- Testimonial End -->
+ 
+Index: client/components/taikhoan/dangky.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><section class=\"shop_section layout_padding\">\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-9\">\r\n            <div class=\"container\">\r\n                <div class=\"card\" style=\"width: 80rem;\">\r\n                    <h1 class=\"text-center\">ĐĂNG KÝ THÀNH VIÊN</h1>\r\n                    <div class=\"card-body\">\r\n                        <form action=\"index.php?act=dangky\" method=\"post\">\r\n                            <div class=\"\">\r\n                                Email\r\n                                <input class=\"form-control\" type=\"email\" name=\"email\">\r\n                            </div>\r\n                            <div class=\"\">\r\n                                Tên đăng nhập\r\n                                <input class=\"form-control\" type=\"text\" name=\"name\">\r\n                            </div>\r\n                            <div class=\"\">\r\n                                Mật khẩu\r\n                                <input class=\"form-control\" type=\"password\" name=\"pass\">\r\n                            </div>\r\n                            <br>\r\n                            <div class=\"text-center\">\r\n\r\n                                <input style=\" background-color: lightcoral ; border: none; border-radius: 5px; height: 40px;\" type=\"submit\" name=\"dangky\" value=\"Đăng ký\">\r\n                                <input style=\" background-color: lightcoral ; border: none; border-radius: 5px; height: 40px; ; \" type=\"reset\" value=\"Nhập lại\">\r\n                            </div>\r\n\r\n                        </form>\r\n                        <h2 class=\"'thongbao\" style=\"color: red\">\r\n                       <?php\r\n                       \r\n                            if(isset($thongbao)&&($thongbao!= \"\")){\r\n                                echo $thongbao;\r\n                            }\r\n                       ?>\r\n                       </h2>\r\n                    </div>\r\n                    <br>\r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n       \r\n\r\n    </div>\r\n\r\n\r\n</section>
+===================================================================
+diff --git a/client/components/taikhoan/dangky.php b/client/components/taikhoan/dangky.php
+--- a/client/components/taikhoan/dangky.php	
++++ b/client/components/taikhoan/dangky.php	
+@@ -1,59 +1,150 @@
+-<section class="shop_section layout_padding">
++<!DOCTYPE html>
++<html lang="en">
+ 
+-    <div class="row">
+-        <div class="col-9">
+-            <div class="container">
+-                <div class="card" style="width: 80rem;">
+-                    <h1 class="text-center">ĐĂNG KÝ THÀNH VIÊN</h1>
+-                    <div class="card-body">
++
++
++<body>
++
++
++                      
++    <!-- Contact Start -->
++    <div class="container-fluid py-5">
++        <div class="container py-5">
++            <div class="row justify-content-center">
++                <div class="col-lg-6">
++                    <h1 class="section-title position-relative text-center mb-5">Đăng ký</h1>
++                </div>
++                
++            </div>
++            <div class="row justify-content-center">
++                <div class="col-lg-9">
++                    <div class="contact-form bg-light rounded p-5">
++                    <?php
++                       
++                       if(isset($thongbao)&&($thongbao!= "")){
++                           echo '<div class="alert alert-primary" role="alert">
++                          '.$thongbao.'!
++                         </div>';
++                       }
++                  ?>
++                 
+                         <form action="index.php?act=dangky" method="post">
+-                            <div class="">
+-                                Email
+-                                <input class="form-control" type="email" name="email">
+-                            </div>
+-                            <div class="">
+-                                Tên đăng nhập
+-                                <input class="form-control" type="text" name="name">
++                            <div class="form-row">
++                                <div class="col-sm-6 control-group">
++                                    <input type="text" class="form-control p-4" name="name" placeholder="Tên" required="required" " />
++                                    <p class="help-block text-danger"></p>
++                                </div>
++                                <div class="col-sm-6 control-group">
++                                    <input type="password" class="form-control p-4" name="pass" placeholder="Mật khẩu" required="required" data-validation-required-message="Mật khẩu không được để trống" />
++                                    <p class="help-block text-danger"></p>
++                                </div>
+                             </div>
+-                            <div class="">
+-                                Mật khẩu
+-                                <input class="form-control" type="password" name="pass">
++                            <div class="control-group">
++                                <input type="email" class="form-control p-4" name="email" placeholder="Email" required="required" data-validation-required-message="Email không được để trống" />
++                                <p class="help-block text-danger"></p>
+                             </div>
+-                            <br>
++                          
++                            <div>
+                             <div class="text-center">
+-
+-                                <input style=" background-color: lightcoral ; border: none; border-radius: 5px; height: 40px;" type="submit" name="dangky" value="Đăng ký">
+-                                <input style=" background-color: lightcoral ; border: none; border-radius: 5px; height: 40px; ; " type="reset" value="Nhập lại">
++                                <input class="btn btn-primary" type="submit" name="dangky" value="Đăng ký">
++                                <button class="btn btn-primary" type="reset">Nhập lại</button>
+                             </div>
+-
++                            </div>
+                         </form>
+-                        <h2 class="'thongbao" style="color: red">
+-                       <?php
+-                       
+-                            if(isset($thongbao)&&($thongbao!= "")){
+-                                echo $thongbao;
+-                            }
+-                       ?>
+-                       </h2>
+-                    </div>
+-                    <br>
+-                </div>
++                    </div>
++                </div>
++            </div>
++            
++            
++        </div>
++        <div class="row justify-content-center">
++               
++    <div class="contact-form bg-light rounded">
++            <div class="h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
++            <?php
++      if (isset($_SESSION['name'])) {
++        extract($_SESSION['name']);
++         $image=$image_path.$image;
++       
++echo'
++          
++<div class="team-item">
++<div class="team-img mx-auto">
++                        <img src="'.$image.'" class="rounded-circle" style="object-fit: cover;">
++                    </div>
++                   
++                    <h3 class="font-weight-bold text-primary mt-3 mb-4">'.$name.'</h3>
++                    <div class="list-group">
++
++         
++          <a href="index.php?act=quenmk" class="list-group-item list-group-item-action list-group-item-warning">Quên mật khẩu</a>
++          
++         
++            <a href="index.php?act=edit_taikhoan" class="list-group-item list-group-item-action list-group-item-warning">Cập nhật tài khoản</a>
++          
++          <?php if($role==1){ ?>
++         
++            <a href="../admin/index.php" class="list-group-item list-group-item-action list-group-item-warning">Đăng nhập Admin</a>
++         
++            <?php } ?>
++          
++            <a href="index.php?act=thoat" class="list-group-item list-group-item-action list-group-item-warning">Đăng xuất</a>
++         
++          </div>
++                  
++                </div> </div>  '   ;         
++        ?>
++        
++                <?php
++      } else {
++        ?>
++        <form action="index.php?act=dangnhap" method="post">
++          <div class="form-group row">
++            <label>Tên đăng nhập</label>
++            <input class="form-control" type="text" name="name" required>
++          </div>
++
++          <div class="form-group row">
++            <label>Mật khẩu</label>
++
++            <input class="form-control" type="password" name="pass" required>
++          </div>
++          <div class="form-check">
++
++
++            <input class="form-check-input" type="checkbox" value="" id="" name="">
++            <label class="form-check-label">
++              Ghi nhớ tài khoản?
++            </label>
++          </div>
++          <div class="form-group row">
++            <input class="form-control" type="submit" value="Đăng nhập" name="dangnhap">
++          </div>
++        </form>
++        <li>
++          <a href="#">Quên mật khẩu</a>
++        </li>
++        <li>
++          <a href="index.php?act=dangky">Đăng ký thành viên</a>
++        </li>
++      <?php } ?>
+             </div>
+-
+-
+         </div>
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-       
+-
++        </div>
+     </div>
++    
++       
++   
++    <!-- Contact End -->
+ 
+ 
+-</section>
+\ No newline at end of file
++    <!-- Footer Start -->
++    
++    <!-- Footer End -->
++
++
++    <!-- Back to Top -->
++    
++</body>
++
++</html>
+\ No newline at end of file
+Index: client/components/taikhoan/edit_taikhoan.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><section class=\"shop_section layout_padding\">\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-9\">\r\n            <div class=\"container\">\r\n                <div class=\"card\" style=\"width: 80rem;\">\r\n                    <h1 class=\"text-center\">CẬP NHẬT TÀI KHOẢN</h1>\r\n                    <div class=\"card-body\">\r\n                        <?php\r\n                            if(isset($_SESSION['user'])&&($is_array=$_SESSION['user'])){\r\n                                extract($_SESSION['user']);\r\n\r\n                            }\r\n                        ?>\r\n                        <form action=\"index.php?act=edit_taikhoan\" method=\"post\">\r\n                            <div class=\"\">\r\n                                Email\r\n                                <input class=\"form-control\" type=\"email\" name=\"email\" value=\"<?=$email?>\">\r\n                            </div>\r\n                            <div class=\"\">\r\n                                Tên đăng nhập\r\n                                <input class=\"form-control\" type=\"text\" name=\"name\" value=\"<?=$name?>\">\r\n                            </div>\r\n                            <div class=\"row\">\r\n                <label  class=\"col-sm-3 text-end control-label col-form-label\">Hình ảnh</label>\r\n                <div class=\"col-sm-9\">\r\n                <input class=\"form-control\" type=\"file\" name=\"image\">\r\n                </div>\r\n                \r\n            </div>\r\n                            <div class=\"\">\r\n                                Mật khẩu\r\n                                <input class=\"form-control\" type=\"password\" name=\"pass\" value=\"<?=$pass?>\">\r\n                            </div>\r\n                            <div class=\"\">\r\n                                Địa chỉ\r\n                                <input class=\"form-control\" type=\"text\" name=\"address\" value=\"<?=$address?>\">\r\n                            </div>\r\n                            <div class=\"\">\r\n                                Điện thoại\r\n                                <input class=\"form-control\" type=\"text\" name=\"phone\" value=\"<?=$phone?>\">\r\n                            </div>\r\n                            <br>\r\n                            <div class=\"text-center\">\r\n                                <input type=\"hidden\" name=\"customer_ID\" value=\"<?=$customer_ID?>\">\r\n                                <input type=\"submit\" name=\"capnhat\" value=\"Cập nhật\">\r\n                                <input type=\"reset\" value=\"Nhập lại\">\r\n                            </div>\r\n\r\n                        </form>\r\n                        <h2 class=\"'thongbao\" style=\"color: red\">\r\n                       <?php\r\n                       \r\n                            if(isset($thongbao)&&($thongbao!= \"\")){\r\n                                echo $thongbao;\r\n                            }\r\n                       ?>\r\n                       </h2>\r\n                    </div>\r\n                    <br>\r\n                </div>\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n        \r\n    </div>\r\n\r\n\r\n</section>
+===================================================================
+diff --git a/client/components/taikhoan/edit_taikhoan.php b/client/components/taikhoan/edit_taikhoan.php
+--- a/client/components/taikhoan/edit_taikhoan.php	
++++ b/client/components/taikhoan/edit_taikhoan.php	
+@@ -1,61 +1,72 @@
+-<section class="shop_section layout_padding">
+ 
+-    <div class="row">
+-        <div class="col-9">
+-            <div class="container">
++
++<div class="container-fluid py-5">
++        <div class="container py-5">
++            <div class="row justify-content-center">
+                 <div class="card" style="width: 80rem;">
+-                    <h1 class="text-center">CẬP NHẬT TÀI KHOẢN</h1>
++                    <h1 class="section-title position-relative text-center mb-5">Cập nhật tài khoản</h1>
+                     <div class="card-body">
+                         <?php
+-                            if(isset($_SESSION['user'])&&($is_array=$_SESSION['user'])){
+-                                extract($_SESSION['user']);
++                            if(isset($_SESSION['name'])&&($is_array=$_SESSION['name'])){
++                                extract($_SESSION['name']);
+ 
+                             }
++                            if(isset($thongbao)&&($thongbao!= "")){
++                                echo '<div class="alert alert-primary" role="alert">
++                               '.$thongbao.'!
++                              </div>';
++                            }
++                            
+                         ?>
++                        
+                         <form action="index.php?act=edit_taikhoan" method="post">
+-                            <div class="">
+-                                Email
+-                                <input class="form-control" type="email" name="email" value="<?=$email?>">
+-                            </div>
+-                            <div class="">
+-                                Tên đăng nhập
+-                                <input class="form-control" type="text" name="name" value="<?=$name?>">
+-                            </div>
+-                            <div class="row">
+-                <label  class="col-sm-3 text-end control-label col-form-label">Hình ảnh</label>
+-                <div class="col-sm-9">
+-                <input class="form-control" type="file" name="image">
++                        <div class="form-group row">
++                <label class="text-uppercase text-xs font-weight-bolder opacity-7">Email</label>
++               
++                <div class="col-sm-12">
++                    <input type="email" class="form-control" name="email" value="<?=$email?>" required>
++                </div>
++            </div>
++
++            <div class="form-group row">
++                <label  class="text-uppercase text-xs font-weight-bolder opacity-7">Tên đăng nhập</label>
++                <div class="col-sm-12">
++                    <input type="text" class="form-control" name="name" value="<?=$name?>" required>
+                 </div>
+                 
+             </div>
+-                            <div class="">
+-                                Mật khẩu
+-                                <input class="form-control" type="password" name="pass" value="<?=$pass?>">
+-                            </div>
+-                            <div class="">
+-                                Địa chỉ
+-                                <input class="form-control" type="text" name="address" value="<?=$address?>">
+-                            </div>
+-                            <div class="">
+-                                Điện thoại
+-                                <input class="form-control" type="text" name="phone" value="<?=$phone?>">
+-                            </div>
++                            
++                
++                        
++            <div class="form-group row">
++                <label  class="text-uppercase text-xs font-weight-bolder opacity-7">Mật khẩu</label>
++                <div class="col-sm-12">
++                    <input type="password" class="form-control" name="pass" value="<?=$pass?>" required>
++                </div>
++                
++            </div>
++            <div class="form-group row">
++                <label  class="text-uppercase text-xs font-weight-bolder opacity-7">Địa chỉ</label>
++                <div class="col-sm-12">
++                    <input type="text" class="form-control" name="address" value="<?=$address?>" required>
++                </div>
++                
++            </div> <div class="form-group row">
++                <label  class="text-uppercase text-xs font-weight-bolder opacity-7">Số điện thoại</label>
++                <div class="col-sm-12">
++                    <input type="text" class="form-control" name="phone" value="<?=$phone?>" required>
++                </div>
++                
++            </div>
+                             <br>
+                             <div class="text-center">
+                                 <input type="hidden" name="customer_ID" value="<?=$customer_ID?>">
+-                                <input type="submit" name="capnhat" value="Cập nhật">
+-                                <input type="reset" value="Nhập lại">
++                                <input type="submit" class="btn btn-primary" name="capnhat" value="Cập nhật">
++                                <input type="reset" class="btn btn-primary" value="Nhập lại">
+                             </div>
+ 
+                         </form>
+-                        <h2 class="'thongbao" style="color: red">
+-                       <?php
+-                       
+-                            if(isset($thongbao)&&($thongbao!= "")){
+-                                echo $thongbao;
+-                            }
+-                       ?>
+-                       </h2>
++                        
+                     </div>
+                     <br>
+                 </div>
+@@ -76,4 +87,3 @@
+     </div>
+ 
+ 
+-</section>
+\ No newline at end of file
+Index: client/components/product.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n\r\n<body>\r\n   \r\n\r\n\r\n    <!-- Header Start -->\r\n    <div class=\"jumbotron jumbotron-fluid page-header\" style=\"margin-bottom: 90px;\">\r\n        <div class=\"container text-center py-5\">\r\n            <h1 class=\"text-white display-3 mt-lg-5\">Product</h1>\r\n            <div class=\"d-inline-flex align-items-center text-white\">\r\n                <p class=\"m-0\"><a class=\"text-white\" href=\"\">Home</a></p>\r\n                <i class=\"fa fa-circle px-3\"></i>\r\n                <p class=\"m-0\">Product</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Header End -->\r\n\r\n\r\n    <!-- Products Start -->\r\n    <div class=\"container-fluid py-5\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row justify-content-center\">\r\n                <div class=\"col-lg-6\">\r\n                    <h1 class=\"section-title position-relative text-center mb-5\">Best Prices We Offer For Ice Cream Lovers</h1>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col-lg-3 col-md-6 mb-4 pb-2\">\r\n                    <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                        <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                            <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                        </div>\r\n                        <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 200px; height: 200px;\">\r\n                            <img class=\"rounded-circle w-100 h-100\" src=\"img/na/NARCISO AMBRÉE EDP.webp\" style=\"object-fit: cover;\">\r\n                        </div>\r\n                        <h5 class=\"font-weight-bold mb-4\">Ambrée EDP</h5>\r\n                        <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-3 col-md-6 mb-4 pb-2\">\r\n                    <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                        <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                            <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                        </div>\r\n                        <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 200px; height: 200px;\">\r\n                            <img class=\"rounded-circle w-100 h-100\" src=\"img/na/Narciso For Her Fleur Musc EDP.webp\" style=\"object-fit: cover;\">\r\n                        </div>\r\n                        <h5 class=\"font-weight-bold mb-4\">Fleur Musc EDP</h5>\r\n                        <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-3 col-md-6 mb-4 pb-2\">\r\n                    <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                        <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                            <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                        </div>\r\n                        <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                            <img class=\"rounded-circle w-100 h-100\" src=\"img/product-3.jpg\" style=\"object-fit: cover;\">\r\n                        </div>\r\n                        <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                        <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-3 col-md-6 mb-4 pb-2\">\r\n                    <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                        <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                            <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                        </div>\r\n                        <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                            <img class=\"rounded-circle w-100 h-100\" src=\"img/product-4.jpg\" style=\"object-fit: cover;\">\r\n                        </div>\r\n                        <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                        <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-3 col-md-6 mb-4 pb-2\">\r\n                    <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                        <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                            <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                        </div>\r\n                        <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                            <img class=\"rounded-circle w-100 h-100\" src=\"img/product-5.jpg\" style=\"object-fit: cover;\">\r\n                        </div>\r\n                        <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                        <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-3 col-md-6 mb-4 pb-2\">\r\n                    <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                        <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                            <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                        </div>\r\n                        <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                            <img class=\"rounded-circle w-100 h-100\" src=\"img/product-1.jpg\" style=\"object-fit: cover;\">\r\n                        </div>\r\n                        <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                        <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-3 col-md-6 mb-4 pb-2\">\r\n                    <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                        <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                            <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                        </div>\r\n                        <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                            <img class=\"rounded-circle w-100 h-100\" src=\"img/product-2.jpg\" style=\"object-fit: cover;\">\r\n                        </div>\r\n                        <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                        <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-lg-3 col-md-6 mb-4 pb-2\">\r\n                    <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                        <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                            <h4 class=\"font-weight-bold text-white mb-0\">$99</h4>\r\n                        </div>\r\n                        <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                            <img class=\"rounded-circle w-100 h-100\" src=\"img/product-3.jpg\" style=\"object-fit: cover;\">\r\n                        </div>\r\n                        <h5 class=\"font-weight-bold mb-4\">Vanilla Ice Cream</h5>\r\n                        <a href=\"\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-12 text-center\">\r\n                    <a href=\"\" class=\"btn btn-primary py-3 px-5\">Load More</a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- Products End -->\r\n\r\n\r\n    <!-- Footer Start -->\r\n    \r\n    <!-- Footer End -->\r\n\r\n\r\n    <!-- Back to Top -->\r\n    <a href=\"#\" class=\"btn btn-secondary px-2 back-to-top\"><i class=\"fa fa-angle-double-up\"></i></a>\r\n\r\n\r\n    <!-- JavaScript Libraries -->\r\n    <script src=\"https://code.jquery.com/jquery-3.4.1.min.js\"></script>\r\n    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js\"></script>\r\n    <script src=\"lib/easing/easing.min.js\"></script>\r\n    <script src=\"lib/waypoints/waypoints.min.js\"></script>\r\n    <script src=\"lib/owlcarousel/owl.carousel.min.js\"></script>\r\n    <script src=\"lib/isotope/isotope.pkgd.min.js\"></script>\r\n    <script src=\"lib/lightbox/js/lightbox.min.js\"></script>\r\n\r\n    <!-- Contact Javascript File -->\r\n    <script src=\"mail/jqBootstrapValidation.min.js\"></script>\r\n    <script src=\"mail/contact.js\"></script>\r\n\r\n    <!-- Template Javascript -->\r\n    <script src=\"js/main.js\"></script>\r\n</body>\r\n\r\n</html>
+===================================================================
+diff --git a/client/components/product.php b/client/components/product.php
+--- a/client/components/product.php	
++++ b/client/components/product.php	
+@@ -7,16 +7,7 @@
+ 
+ 
+     <!-- Header Start -->
+-    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+-        <div class="container text-center py-5">
+-            <h1 class="text-white display-3 mt-lg-5">Product</h1>
+-            <div class="d-inline-flex align-items-center text-white">
+-                <p class="m-0"><a class="text-white" href="">Home</a></p>
+-                <i class="fa fa-circle px-3"></i>
+-                <p class="m-0">Product</p>
+-            </div>
+-        </div>
+-    </div>
++    
+     <!-- Header End -->
+ 
+ 
+@@ -25,108 +16,42 @@
+         <div class="container py-5">
+             <div class="row justify-content-center">
+                 <div class="col-lg-6">
+-                    <h1 class="section-title position-relative text-center mb-5">Best Prices We Offer For Ice Cream Lovers</h1>
++                    <h1 class="section-title position-relative text-center mb-5">Tất cả sản phẩm</h1>
+                 </div>
+             </div>
+             <div class="row">
+-                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+-                            <h4 class="font-weight-bold text-white mb-0">$99</h4>
+-                        </div>
+-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 200px; height: 200px;">
+-                            <img class="rounded-circle w-100 h-100" src="img/na/NARCISO AMBRÉE EDP.webp" style="object-fit: cover;">
+-                        </div>
+-                        <h5 class="font-weight-bold mb-4">Ambrée EDP</h5>
+-                        <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+-                    </div>
+-                </div>
+-                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+-                            <h4 class="font-weight-bold text-white mb-0">$99</h4>
+-                        </div>
+-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 200px; height: 200px;">
+-                            <img class="rounded-circle w-100 h-100" src="img/na/Narciso For Her Fleur Musc EDP.webp" style="object-fit: cover;">
+-                        </div>
+-                        <h5 class="font-weight-bold mb-4">Fleur Musc EDP</h5>
+-                        <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+-                    </div>
+-                </div>
+-                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+-                            <h4 class="font-weight-bold text-white mb-0">$99</h4>
+-                        </div>
+-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+-                            <img class="rounded-circle w-100 h-100" src="img/product-3.jpg" style="object-fit: cover;">
+-                        </div>
+-                        <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+-                        <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+-                    </div>
+-                </div>
+-                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+-                            <h4 class="font-weight-bold text-white mb-0">$99</h4>
+-                        </div>
+-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+-                            <img class="rounded-circle w-100 h-100" src="img/product-4.jpg" style="object-fit: cover;">
+-                        </div>
+-                        <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+-                        <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+-                    </div>
+-                </div>
+-                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+-                            <h4 class="font-weight-bold text-white mb-0">$99</h4>
+-                        </div>
+-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+-                            <img class="rounded-circle w-100 h-100" src="img/product-5.jpg" style="object-fit: cover;">
+-                        </div>
+-                        <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+-                        <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+-                    </div>
+-                </div>
+-                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+-                            <h4 class="font-weight-bold text-white mb-0">$99</h4>
+-                        </div>
+-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+-                            <img class="rounded-circle w-100 h-100" src="img/product-1.jpg" style="object-fit: cover;">
+-                        </div>
+-                        <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+-                        <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+-                    </div>
+-                </div>
+-                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+-                            <h4 class="font-weight-bold text-white mb-0">$99</h4>
+-                        </div>
+-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+-                            <img class="rounded-circle w-100 h-100" src="img/product-2.jpg" style="object-fit: cover;">
+-                        </div>
+-                        <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+-                        <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+-                    </div>
+-                </div>
+-                <div class="col-lg-3 col-md-6 mb-4 pb-2">
+-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+-                            <h4 class="font-weight-bold text-white mb-0">$99</h4>
+-                        </div>
+-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+-                            <img class="rounded-circle w-100 h-100" src="img/product-3.jpg" style="object-fit: cover;">
+-                        </div>
+-                        <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+-                        <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+-                    </div>
+-                </div>
++            <?php 
++                        foreach ($spnew as $sp){
++                            extract($sp);
++                            $linksp ="index.php?act=sanphamct&product_ID=".$product_ID;
++                            $image=$image_path.$image;
++                       
++                            echo'
++                       
++                            <div class="col-lg-3 col-md-6 mb-4 pb-2">
++                         <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
++                             
++                             <a href="'.$linksp.'">
++                             <div class="position-relative rounded mt-n3 mb-4 p-3" style="width: 200px; height: 200px;">
++                                 <img class="rounded w-100 h-100" src="'.$image.'" style="object-fit: cover;">
++                             </div>
++                             </a>
++                             <h5 class="font-weight-bold mb-4">'.$name.'</h5>
++                             <h5 class="font-weight-bold text-primary mb-4">'.$price.'đ</h5>
++                             <form action="index.php?act=addtocart" method="post">
++                             <input type="hidden" name="product_ID" value="'.$product_ID.'">
++                             <input type="hidden" name="name" value="'.$name.'">
++                             <input type="hidden" name="image" value="'.$image.'">
++                             <input type="hidden" name="price" value="'.$price.'">
++                             <input type="submit" name="addtocart" class="btn btn-sm btn-secondary" value="Đặt hàng">
++                             </form>
++                         </div>
++                     </div>';
++                        }
++                        ?>
++              
+                 <div class="col-12 text-center">
+-                    <a href="" class="btn btn-primary py-3 px-5">Load More</a>
++                    <a href="" class="btn btn-primary py-3 px-5">Xem Thêm</a>
+                 </div>
+             </div>
+         </div>
+Index: client/components/product_cate.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div class=\"row\">\r\n\r\n<div class=\"col-9\" >\r\n\r\n<div class=\"container-fluid py-5\">\r\n        <div class=\"container py-5\">\r\n            <div class=\"row\">\r\n                <div class=\"col-lg-6\">\r\n                    <h1 class=\"section-title position-relative mb-5\">Thương hiệu</h1>\r\n                </div>\r\n                <div class=\"col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0\"></div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"col-12\">\r\n                  \r\n                    <?php\r\n             foreach ($dsdm as $dm) {\r\n             extract($dm);\r\n                $linkdm = \"index.php?act=product_cate&category_ID=\" . $category_ID;\r\n                $image=$image_path.$image;\r\n           \r\n          \r\n          \r\n                        echo '<div class=\"btn-group\" role=\"group\" aria-label=\"Basic checkbox toggle button group\">\r\n                       <a href=\"'.$linkdm.'\">\r\n                       \r\n                        <label class=\"btn btn-outline-primary\" for=\"btncheck1\">'.$name.'</label>\r\n                      \r\n                        </a>\r\n                      </div>';\r\n                                 }\r\n                        ?>\r\n                        \r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n       \r\n<div class=\"container\">\r\n    <div>SẢN PHẨM <strong><?=$tendm?></strong> </div>\r\n  <div class=\"row row-cols-auto\">\r\n\r\n           \r\n   \r\n\r\n    \r\n\r\n            <?php\r\n               foreach ($dssp as $sp){\r\n                extract($sp);\r\n                $linksp =\"index.php?act=sanphamct&product_ID=\".$product_ID;\r\n                $image=$image_path.$image;\r\n                \r\n                echo ' <div class=\"product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3\">\r\n                <div class=\"bg-primary mt-n5 py-3\" style=\"width: 80px;\">\r\n                    <h4 class=\"font-weight-bold text-white mb-0\">'.$price.'</h4>\r\n                </div>\r\n                <div class=\"position-relative bg-primary rounded-circle mt-n3 mb-4 p-3\" style=\"width: 150px; height: 150px;\">\r\n                    <img class=\"rounded-circle w-100 h-100\" src=\"'.$image.'\" style=\"object-fit: cover;\">\r\n                </div>\r\n                <h5 class=\"font-weight-bold mb-4\">'.$name.'</h5>\r\n                <a href=\"'.$linksp.'\" class=\"btn btn-sm btn-secondary\">Order Now</a>\r\n            </div>';\r\n               }\r\n               \r\n\r\n\r\n            ?>\r\n           </div> \r\n        </div>\r\n        </div>\r\n        <?php\r\n    include 'category.php';\r\n    ?>\r\n    </div>
+===================================================================
+diff --git a/client/components/product_cate.php b/client/components/product_cate.php
+--- a/client/components/product_cate.php	
++++ b/client/components/product_cate.php	
+@@ -1,44 +1,18 @@
++<div class="container-fluid py-5">
++     
++
+ <div class="row">
+ 
+ <div class="col-9" >
+ 
+-<div class="container-fluid py-5">
+-        <div class="container py-5">
+-            <div class="row">
++            <div class="row justify-content-center">
+                 <div class="col-lg-6">
+-                    <h1 class="section-title position-relative mb-5">Thương hiệu</h1>
++                    <h6 class="section-title position-relative text-center mb-5">SẢN PHẨM <strong><?=$tendm?></strong></h6>
+                 </div>
+-                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+             </div>
+             <div class="row">
+-                <div class="col-12">
+-                  
+-                    <?php
+-             foreach ($dsdm as $dm) {
+-             extract($dm);
+-                $linkdm = "index.php?act=product_cate&category_ID=" . $category_ID;
+-                $image=$image_path.$image;
+-           
+-          
+-          
+-                        echo '<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+-                       <a href="'.$linkdm.'">
+-                       
+-                        <label class="btn btn-outline-primary" for="btncheck1">'.$name.'</label>
+-                      
+-                        </a>
+-                      </div>';
+-                                 }
+-                        ?>
+-                        
+-                    </div>
+-                </div>
+-            </div>
+-        </div>
+-       
+-<div class="container">
+-    <div>SẢN PHẨM <strong><?=$tendm?></strong> </div>
+-  <div class="row row-cols-auto">
++  
++ 
+ 
+            
+    
+@@ -51,25 +25,40 @@
+                 $linksp ="index.php?act=sanphamct&product_ID=".$product_ID;
+                 $image=$image_path.$image;
+                 
+-                echo ' <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+-                <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+-                    <h4 class="font-weight-bold text-white mb-0">'.$price.'</h4>
+-                </div>
+-                <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+-                    <img class="rounded-circle w-100 h-100" src="'.$image.'" style="object-fit: cover;">
+-                </div>
+-                <h5 class="font-weight-bold mb-4">'.$name.'</h5>
+-                <a href="'.$linksp.'" class="btn btn-sm btn-secondary">Order Now</a>
+-            </div>';
+-               }
+-               
+-
+-
+-            ?>
+-           </div> 
+-        </div>
++                echo'
++                       
++                            <div class="col-lg-3 col-md-6 mb-4 pb-2">
++                         <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
++                            
++                             <a href="'.$linksp.'">
++                             <div class="position-relative rounded mt-n3 mb-4 p-3" style="width: 200px; height: 200px;">
++                                 <img class="rounded w-100 h-100" src="'.$image.'" style="object-fit: cover;">
++                             </div>
++                             </a>
++                             <h5 class="font-weight-bold mb-4">'.$name.'</h5>
++                             <h5 class="font-weight-bold text-primary mb-4">'.$price.'đ</h5>
++                             <form action="index.php?act=addtocart" method="post">
++                             <input type="hidden" name="product_ID" value="'.$product_ID.'">
++                             <input type="hidden" name="name" value="'.$name.'">
++                             <input type="hidden" name="image" value="'.$image.'">
++                             <input type="hidden" name="price" value="'.$price.'">
++                             <input type="submit" name="addtocart" class="btn btn-sm btn-secondary" value="Đặt hàng">
++                             </form>
++                         </div>
++                     </div>';
++               }
++               
++
++
++            ?>
++           </div> 
++          
+         </div>
++       
++       
+         <?php
+     include 'category.php';
+     ?>
+-    </div>
+\ No newline at end of file
++     </div>
++    </div>
++  
+\ No newline at end of file
+Index: client/components/sanphamct.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><style>\r\n  .danhgia{\r\n    font-size: 26px;\r\n  }\r\n  .quality{\r\n    width: 50px;\r\n    height: 40px;\r\n    border: 5px dotted #F195B2;\r\n    border-radius: 5px;\r\n    \r\n  }\r\n  .quality:hover{\r\n    color: #FFFFFF;\r\n    background-color: #F195B2;\r\n  }\r\n</style>\r\n<?php \r\n\r\nextract($onesp);\r\necho '<div class=\"container-fluid\" >\r\n<div class=\"\" style=\"margin-bottom: 60px; margin-left: 50px;\">\r\n        <div class=\"\">\r\n            <div class=\"text-primary display-3 mt-lg-5\"></div>\r\n            <ul class=\"nav nav-tabs card-header-tabs\">\r\n         <li class=\"nav-item\">\r\n           <a class=\"nav-link\" aria-current=\"true\" href=\"index.php\">Trang chủ</a>\r\n         </li>\r\n         <li class=\"nav-item\">\r\n           <a class=\"nav-link\" href=\"index.php?act=sanphamall\">Sản phẩm</a>\r\n         </li>\r\n         <li class=\"nav-item\">\r\n           <a class=\"nav-link active\" href=\"#\">'.$name.'</a>\r\n         </li>\r\n       </ul>\r\n        </div>\r\n    </div>';\r\n    \r\n    \r\n\r\n?>   \r\n<?php\r\n      \r\n           $image=$image_path.$image;\r\n          \r\n          \r\n         \r\n\r\necho '\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-6\" style=\"margin-left: 50px;\">\r\n    <img src=\"'.$image.'\" alt=\"\" class=\"rounded\" style=\"width: 800px; height:800px;\">\r\n    </div>\r\n    <div class=\"col-5\">\r\n    <div> <h1>'.$name.'</h1></div>\r\n    <div class=\"text-warning\" style=\"font-size: 26px; line-height: 60px; margin-left: 20px;\" ><i class=\"bi bi-star-fill\" style=\"margin-right: 5px;\" ></i><i class=\"bi bi-star-fill\" style=\"margin-right: 5px;\"></i><i class=\"bi bi-star-fill\" style=\"margin-right: 5px;\"></i><i class=\"bi bi-star-fill\" style=\"margin-right: 5px;\"></i><i class=\"bi bi-star-fill\"style=\"margin-right: 5px;\"></i> </div>\r\n    <div class=\"danhgia\" style=\"margin-left: 20px;\"> <span style=\"margin-right: 15px;  line-height: 60px;\">11 đánh giá</span> <b>31k</b> <span>đã bán</span></div>\r\n    <h2 class=\"text-danger\" style=\"margin-left: 40px; line-height: 60px;\">'.$price.' đ</h2>\r\n    <div class=\"btn-group\" style=\"margin-left: 20px;\">\r\n   <button type=\"button\" class=\"quality\">-</button>\r\n   <button type=\"button\" class=\"quality\">1</button>\r\n   <button type=\"button\" class=\"quality\">+</button>\r\n </div>\r\n <div style=\"line-height: 100px;\">\r\n <button class=\"btn btn-danger\" style=\"font-size: 20px;\"><i class=\"fas fa-cart-plus\" style=\"margin-right: 5px;\"></i>Thêm vào giỏ hàng</button>\r\n </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n   <div style=\"margin-top: 50px;\">\r\n   \r\n     <div class=\"card\">\r\n     <div class=\"card-header\">\r\n       <ul class=\"nav nav-tabs card-header-tabs\">\r\n         <li class=\"nav-item\">\r\n           <a class=\"nav-link\" href=\"#\">Thông tin sản phẩm</a>\r\n         </li>\r\n        \r\n        \r\n       </ul>\r\n     </div>\r\n     <div class=\"card-body\">\r\n       <h5 class=\"card-title\">Mô tả</h5>\r\n       <p class=\"card-text\">'.$description.'</p>\r\n       \r\n     </div>\r\n   </div>\r\n   <div class=\"card\">\r\n   <div class=\"card-header\">\r\n     <ul class=\"nav nav-tabs card-header-tabs\">\r\n       <li class=\"nav-item\">\r\n         <a class=\"nav-link\" href=\"#\">Hướng dẫn sử dụng</a>\r\n       </li>\r\n      \r\n      \r\n     </ul>\r\n   </div>\r\n   <div class=\"card-body\">\r\n     <h5 class=\"card-title\">Cách dùng</h5>\r\n     <p class=\"card-text\">'.$use_pro.'</p>\r\n     \r\n   </div>\r\n </div>\r\n\r\n   </div>\r\n\r\n   </div>\r\n  \r\n  ';\r\n?>\r\n</div>\r\n\r\n
+===================================================================
+diff --git a/client/components/sanphamct.php b/client/components/sanphamct.php
+--- a/client/components/sanphamct.php	
++++ b/client/components/sanphamct.php	
+@@ -1,4 +1,5 @@
+ <style>
++  
+   .danhgia{
+     font-size: 26px;
+   }
+@@ -47,67 +48,113 @@
+ 
+ echo '
+ 
+-<div class="row">
+-    <div class="col-6" style="margin-left: 50px;">
+-    <img src="'.$image.'" alt="" class="rounded" style="width: 800px; height:800px;">
+-    </div>
+-    <div class="col-5">
+-    <div> <h1>'.$name.'</h1></div>
+-    <div class="text-warning" style="font-size: 26px; line-height: 60px; margin-left: 20px;" ><i class="bi bi-star-fill" style="margin-right: 5px;" ></i><i class="bi bi-star-fill" style="margin-right: 5px;"></i><i class="bi bi-star-fill" style="margin-right: 5px;"></i><i class="bi bi-star-fill" style="margin-right: 5px;"></i><i class="bi bi-star-fill"style="margin-right: 5px;"></i> </div>
+-    <div class="danhgia" style="margin-left: 20px;"> <span style="margin-right: 15px;  line-height: 60px;">11 đánh giá</span> <b>31k</b> <span>đã bán</span></div>
+-    <h2 class="text-danger" style="margin-left: 40px; line-height: 60px;">'.$price.' đ</h2>
+-    <div class="btn-group" style="margin-left: 20px;">
+-   <button type="button" class="quality">-</button>
+-   <button type="button" class="quality">1</button>
+-   <button type="button" class="quality">+</button>
+- </div>
+- <div style="line-height: 100px;">
+- <button class="btn btn-danger" style="font-size: 20px;"><i class="fas fa-cart-plus" style="margin-right: 5px;"></i>Thêm vào giỏ hàng</button>
+- </div>
+-    </div>
+-  </div>
++<main>
++      
++        <div class="container mt-4">
++             <div class="card">
++                <div class="container-fliud">
++                    
++                        <div class="wrapper row">
++                            <div class="col-md-7">
++                               
++                                <ul class="preview-thumbnail nav nav-tabs">
++                                    <li class="">
++                                        
++                                        <img src="'.$image.'" alt="" class="rounded" style="width: 600px;">
++                                        
++                                    </li>
++                                    
++                                </ul>
++                            </div>
++                            <div class="col-md-5">
++                                <h3 class="text-uppercase text-primary">'.$name.'</h3>
++                                <div class="text-danger">
++                                    <div class="stars">
++                                    <i class="bi bi-star-fill" style="margin-right: 5px;" ></i>
++                                    <i class="bi bi-star-fill" style="margin-right: 5px;" ></i>
++                                    <i class="bi bi-star-fill" style="margin-right: 5px;" ></i>
++                                    <i class="bi bi-star-fill" style="margin-right: 5px;" ></i>
++                                    <i class="bi bi-star-fill" style="margin-right: 5px;" ></i>
++                                    </div>
++                                    <span class="review-no">'.$view.' view</span>
++                                </div>
++                                <p class="product-description">'.$description.'</p>
++                                <small class="text-muted">Giá cũ: <s><span>'.$price_old.'</span></s></small>
++                                <h4 class="price">Giá hiện tại: <span>'.$price.'</span></h4>
++                                <p class="vote"><strong>100%</strong> hàng <strong>Chính hãng</strong>, đảm bảo
++                                    <strong>Chất
++                                        lượng</strong>!</p>
++                               
++                               
++                                <div class="form-group">
++                                    <label for="soluong">Số lượng đặt mua:</label>
++                                    <input type="number" class="form-control" id="soluong" name="soluong">
++                                </div>
++                                <div class="action">
++                                <button class="btn btn-danger"><i class="fas fa-cart-plus" style="margin-right: 5px;"></i>Thêm vào giỏ hàng</button>
++                                    <button class="btn btn-primary" href="#"><span class="fa fa-heart"></span></button>
++                                </div>
++                            </div>
++
++                        </div>
++                    
++                </div>
++            </div>
+ 
+-
+-   <div style="margin-top: 50px;">
+-   
+-     <div class="card">
+-     <div class="card-header">
+-       <ul class="nav nav-tabs card-header-tabs">
+-         <li class="nav-item">
+-           <a class="nav-link" href="#">Thông tin sản phẩm</a>
+-         </li>
+-        
+-        
+-       </ul>
+-     </div>
+-     <div class="card-body">
+-       <h5 class="card-title">Mô tả</h5>
+-       <p class="card-text">'.$description.'</p>
+-       
+-     </div>
+-   </div>
+-   <div class="card">
+-   <div class="card-header">
+-     <ul class="nav nav-tabs card-header-tabs">
+-       <li class="nav-item">
+-         <a class="nav-link" href="#">Hướng dẫn sử dụng</a>
+-       </li>
+-      
+-      
+-     </ul>
+-   </div>
+-   <div class="card-body">
+-     <h5 class="card-title">Cách dùng</h5>
+-     <p class="card-text">'.$use_pro.'</p>
+-     
+-   </div>
+- </div>
+-
+-   </div>
++            <div class="card">
++                <div class="container-fluid">
++                <div class="card-header">
++                
++                    <span class="text-uppercase text-primary text-xxs font-weight-bolder" href="#">Chi tiết sản phẩm</span>
++                 
++                 
++               
++              </div>
++              <div class="card-body">
++                
++                <p class="text-xxs font-weight-bolder">'.$description.'</p>
++                
++              </div>
++                <div class="card-header">
++               
++               
++                    <p class="text-uppercase text-primary text-xxs font-weight-bolder" href="#">Hướng dẫn sử dụng</p>
++                 
++                 
++               
++              </div>
++              <div class="card-body">
++             
++                <p class="=text-xxs font-weight-bolder">'.$use_pro.'</p>
++                
++              </div>
++                </div>
++            </div>
++        </div>
++        <!-- End block content -->
++    </main>
+ 
+-   </div>
+-  
+-  ';
+-?>
++
++  
++  ';
++?>
++
++<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
++<script>
++$(document).ready(function(){
++  
++    $("#binhluan").load("components/binhluan/binhluanform.php", {product_ID: <?=$product_ID?>});
++  });
++;
++</script>
++
++ 
++       <br><br>    
++        
++   
++    <div id="binhluan">
++        
++    </div>
++
+ </div>
+ 

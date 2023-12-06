@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cee8bff0-fa35-4e3f-ac70-3696b6ebaa49" name="Changes" comment="N01 - TEST1">
+      <change beforePath="$PROJECT_DIR$/.idea/duan1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/AU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Adopt’ Absolu D’amour.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Adopt’ Fleur De Gingembre.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Adopt’ Fleurs de Mon Jardin.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Adopt’ Lady Glitter.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Adopt’ Ma Cherry.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Adopt’ Musc Blanc.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Adopt’ My Rose.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Adopt’ Rose Noire.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Armaf Club De Nuit.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/BR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Carolina Herrera 212 Heroes.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Carolina Herrera CH Privé Eau De Parfum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Carolina Herrera Good Girl.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Carolina Herrera Very Good Girl Glam.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Chanel Allure Sensuelle.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Chanel Chance Eau Tendre Eau Fraiche EDT.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Chanel Chance Eau Tendre.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Chanel Coco Mademoiselle Intense.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Chanel Gabrielle Essence.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Chanel N5 L'eau.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Angel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Charm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Clever.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Dynamic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Empress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Good Girl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Party.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Pretty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Queen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme So Sexy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Trust.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Vanitas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Charme Venus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Dior Addict Eau Fraiche.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Dior Hypnotic Poison EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Dior J'Adore Absolu.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Dior Joy Intense.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Dior Poison Girl EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Fantasy Crystal Rain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Fantasy Crystal Rain1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Fantasy Magic Sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Fantasy Pinky Cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Fantasy Rainbow Beat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Fantasy Sparkling Stars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/For Her EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/GB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Good Charme Glamor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Hermes Paris.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/JEAN MISS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Le Labo Discovery.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Louis Vuitton LV Miniature.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Marc Jacobs Fragrances.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Miss Dior 2021 EDP Tester.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Miss-Love.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/NARCISO AMBRÉE EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/NARCISO AMBRÉE EDP1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Narciso For Her Fleur Musc EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Narciso For Her Fleur Musc EDP1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Poudrée EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/The Best Of Lancome Fragrances.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/US.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Verites After The Rain.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Verites Chasing Cloud.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Verites De Club.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Verites Secretly Sexy.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/YSL Black Opium Holiday Party Kit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/angular.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/b5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/b6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/bg-profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/bootstrap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/bruce-mars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/carousel-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/carousel-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/carousel-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/carousel-21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/carousel-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/cotton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved11-small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved5-small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved6-small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/curved9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/dribbble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/dropbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/home-decor-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/home-decor-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/home-decor-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/ice-cream-shop-website-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/icon-sun-cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/irene.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/ivana-square.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/ivancik.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/j.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/jisoo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/kal-visuals-square.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/lisa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/logo-ct-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/logo-ct.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/marie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/mastercard1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/miyeon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/nucleo-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/nucleo-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/nucleo-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/nucleo-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/nucleo.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/nucleo.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/nucleo.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/nucleo.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/one.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/portfolio-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/portfolio-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/portfolio-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/portfolio-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/portfolio-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/portfolio-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/product-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/product-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/product-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/product-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/product-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/promotion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/react.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/rocket-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/sakura.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/service-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/service-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/service-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/service-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/sketch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/slack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/some.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/spotify.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/sullyoon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/team-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/team-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/team-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/team-21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/team-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/team-31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/team-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/team-41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/testimonial-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/testimonial-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/testimonial-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/tim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/unass.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/us6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/visa1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/vr-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/vue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/white-curved.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/wonyoung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/argon-dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/argon-dashboard.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/argon-dashboard.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/nucleo-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/nucleo-svg.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/bg-profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/bruce-mars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/carousel-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/carousel-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/carousel-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved11-small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved5-small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved6-small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/curved9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/curved-images/white-curved.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/down-arrow-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/down-arrow-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/down-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/home-decor-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/home-decor-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/home-decor-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/icons/flags/AU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/icons/flags/BR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/icons/flags/DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/icons/flags/GB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/icons/flags/US.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/illustrations/icon-documentation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/illustrations/rocket-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/ivana-square.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/ivancik.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/kal-visuals-square.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/logo-ct-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/logo-ct.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/logos/mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/logos/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/marie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/shapes/pattern-lines.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/shapes/shape-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/shapes/shape-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/shapes/shape-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/shapes/wave-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/shapes/wave-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/shapes/waves-gray.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/shapes/waves-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/small-logos/icon-sun-cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/small-logos/logo-atlassian.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/small-logos/logo-invision.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/small-logos/logo-jira.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/small-logos/logo-slack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/small-logos/logo-spotify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/small-logos/logo-webdev.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/small-logos/logo-xd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/team-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/team-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/team-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/team-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/angular.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/bootstrap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/dribbble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/dropbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/react.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/sketch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/slack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/spotify.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/tim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/unass.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/theme/vue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/img/vr-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/argon-dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/argon-dashboard.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/argon-dashboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/core/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/core/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/core/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/plugins/Chart.extension.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/plugins/bootstrap-notify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/plugins/chartjs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/plugins/perfect-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/plugins/smooth-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_avatars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_breadcrumbs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_dark-version.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_dropup.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_fixed-plugin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_info-areas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_misc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_navbar-vertical.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_popovers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_rtl.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_social-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_tilt.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_timeline.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_tooltips.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_utilities-extend.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_accordion.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_containers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_helpers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_maps.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_offcanvas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_placeholders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_spinners.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_toasts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/bootstrap-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/bootstrap-reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/bootstrap-utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/forms/_floating-labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/forms/_form-check.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/forms/_form-control.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/forms/_form-range.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/forms/_form-select.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/forms/_form-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/forms/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/forms/_labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/forms/_validation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_color-bg.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_colored-links.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_ratio.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_stacks.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_stretched-link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_text-truncation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_visually-hidden.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/helpers/_vr.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_backdrop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_box-shadow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_caret.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_color-scheme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_container.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_deprecate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_table-variants.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/mixins/_visually-hidden.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/utilities/_api.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/bootstrap/vendor/_rfs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/cards/card-background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/cards/card-carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/custom/_styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/custom/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/forms/_form-check.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/forms/_form-select.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/forms/_form-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/forms/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/forms/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/forms/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/forms/_labels.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/mixins/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/mixins/_colored-shadows.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/mixins/_social-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/mixins/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/plugins/free/_flatpickr.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/plugins/free/_nouislider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/plugins/free/_perfect-scrollbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/plugins/free/_prism.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/plugins/free/plugins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_animations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_avatars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_cards-extend.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_choices.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_dark-version.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_dropdowns.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_fixed-plugin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_form-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_full-calendar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_info-areas.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_misc-extend.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_misc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_navbar-vertical.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_rtl.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_social-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_table.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_timeline.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_utilities-extend.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/argon-dashboard/variables/_virtual-reality.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/binhluan/list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/danhmuc/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/danhmuc/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/danhmuc/list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/danhmuc/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/docs/documentation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/authentication-login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/authentication-register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/error-403.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/error-404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/error-405.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/error-500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/form-basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/form-wizard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/icon-fontawesome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/icon-material.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/pages-buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/pages-calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/pages-chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/pages-elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/pages-gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/pages-invoice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/html/ltr/widgets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/billing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/rtl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sign-in.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/sign-up.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/virtual-reality.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/sanpham/add.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/sanpham/list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/sanpham/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/taikhoan/list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/binhluan/binhluanform.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/cart/billcomfirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/cart/billcomfirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/gallery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/gioithieu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/lienhe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/product_cate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/sanphamct.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/service.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/taikhoan/dangky.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/taikhoan/edit_taikhoan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/taikhoan/quenmk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/taikhoan/taikhoanct.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/taikhoan/taikhoanct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/taikhoanct.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/css/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/ice-cream-shop-website-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/b1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/b3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/b5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/b6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/carousel-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/carousel-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/cotton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/irene.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/j.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/jisoo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/lisa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/miyeon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/na/For Her EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/na/NARCISO AMBRÉE EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/na/Narciso For Her Fleur Musc EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/na/Poudrée EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/one.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/portfolio-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/portfolio-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/portfolio-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/portfolio-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/portfolio-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/portfolio-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/product-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/product-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/product-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/product-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/product-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/promotion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/sakura.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/service-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/service-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/service-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/service-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/some.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/sullyoon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/team-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/team-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/team-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/team-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/testimonial-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/testimonial-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/testimonial-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/img/wonyoung.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/counterup/counterup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/easing/easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/easing/easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/isotope/isotope.pkgd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/isotope/isotope.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/lightbox/css/lightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/lightbox/css/lightbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/lightbox/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/lightbox/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/lightbox/images/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/lightbox/images/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/lightbox/js/lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/lightbox/js/lightbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/lightbox/links.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/assets/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/assets/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/assets/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/assets/owl.theme.green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/assets/owl.theme.green.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/assets/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/owlcarousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/waypoints/links.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/waypoints/waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/mail/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/mail/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/mail/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/mail/jqBootstrapValidation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_spinners.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_toasts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/bootstrap-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/bootstrap-reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_box-shadow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_caret.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_deprecate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_text-hide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/mixins/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_borders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_interactions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_overflow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_screenreaders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_shadows.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_sizing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_stretched-link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/utilities/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/bootstrap/scss/vendor/_rfs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/binhluan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/danhmuc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/pdo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/sanpham.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/taikhoan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Adopt/Adopt’ Absolu D’amour.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Adopt/Adopt’ Fleur De Gingembre.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Adopt/Adopt’ Fleurs de Mon Jardin.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Adopt/Adopt’ Lady Glitter.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Adopt/Adopt’ Ma Cherry.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Adopt/Adopt’ Musc Blanc.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Adopt/Adopt’ My Rose.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Adopt/Adopt’ Rose Noire.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Carolina Herrera/Carolina Herrera 212 Heroes.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Carolina Herrera/Carolina Herrera CH Privé Eau De Parfum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Carolina Herrera/Carolina Herrera Good Girl.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Carolina Herrera/Carolina Herrera Very Good Girl Glam.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Angel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Charm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Clever.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Dynamic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Empress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Good Girl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Party.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Pretty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Queen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme So Sexy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Trust.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Vanitas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Charme Venus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Charme/Good Charme Glamor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Fantasy Crystal Rain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Fantasy/Fantasy Crystal Rain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Fantasy/Fantasy Magic Sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Fantasy/Fantasy Pinky Cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Fantasy/Fantasy Rainbow Beat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Fantasy/Fantasy Sparkling Stars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Verites/Verites After The Rain.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Verites/Verites Chasing Cloud.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Verites/Verites De Club.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/Verites/Verites Secretly Sexy.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/chanel/Chanel Allure Sensuelle.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/chanel/Chanel Chance Eau Tendre Eau Fraiche EDT.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/chanel/Chanel Chance Eau Tendre.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/chanel/Chanel Coco Mademoiselle Intense.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/chanel/Chanel Gabrielle Essence.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/chanel/Chanel N5 L'eau.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/dior/Dior Addict Eau Fraiche.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/dior/Dior Hypnotic Poison EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/dior/Dior J'Adore Absolu.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/dior/Dior Joy Intense.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/dior/Dior Poison Girl EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/dior/Miss Dior 2021 EDP Tester.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/na/NARCISO AMBRÉE EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/na/Narciso For Her Fleur Musc EDP.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/set/Armaf Club De Nuit.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/set/Hermes Paris.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/set/JEAN MISS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/set/Le Labo Discovery.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/set/Louis Vuitton LV Miniature.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/set/Marc Jacobs Fragrances.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/set/Miss-Love.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/set/The Best Of Lancome Fragrances.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/set/YSL Black Opium Holiday Party Kit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/us6.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev/develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;phuongthu2703&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c514c3a4-b48b-4d37-a1ce-93ef55d663ca" />
+        <option name="url" value="https://github.com/TranThiHien2103/nhom4.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2Y9ULA5gaAV2jTKIMzYLB9HZ7Kw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Rebasing dev/thuntp",
+    "last_opened_file_path": "C:/xampp/htdocs/nhom4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\nhom4" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cee8bff0-fa35-4e3f-ac70-3696b6ebaa49" name="Changes" comment="" />
+      <created>1699937232510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699937232510</updated>
+      <workItem from="1699937235743" duration="1113000" />
+      <workItem from="1700116709199" duration="180000" />
+      <workItem from="1700116901754" duration="20000" />
+      <workItem from="1700275783516" duration="71000" />
+      <workItem from="1700320647621" duration="4000" />
+      <workItem from="1700668449082" duration="596000" />
+      <workItem from="1701503256834" duration="139000" />
+      <workItem from="1701510826285" duration="597000" />
+      <workItem from="1701531936410" duration="597000" />
+      <workItem from="1701675052553" duration="598000" />
+    </task>
+    <task id="LOCAL-00001" summary="N01 - TEST">
+      <option name="closed" value="true" />
+      <created>1699937284670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699937284670</updated>
+    </task>
+    <task id="LOCAL-00002" summary="N01 - TEST1">
+      <option name="closed" value="true" />
+      <created>1699952177900</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699952177900</updated>
+    </task>
+    <task id="LOCAL-00003" summary="N01 - TEST1">
+      <option name="closed" value="true" />
+      <created>1699952349359</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699952349359</updated>
+    </task>
+    <task id="LOCAL-00004" summary="N01 - TEST1">
+      <option name="closed" value="true" />
+      <created>1699952611207</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699952611207</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev/thuntp" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="N01 - TEST" />
+    <MESSAGE value="N01 - TEST1" />
+    <option name="LAST_COMMIT_MESSAGE" value="N01 - TEST1" />
+  </component>
+</project>
