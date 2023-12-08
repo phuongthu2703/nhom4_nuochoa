@@ -57,9 +57,9 @@
                   <p class="mb-0">Điền email và mật khẩu để đăng nhập admin</p>
                 </div>
                 <div class="card-body">
-                  <form role="form">
+                  <form role="form" action="index.php?act=dangnhap" method="POST">
                     <div class="mb-3">
-                      <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email">
+                      <input type="text" name="name" class="form-control form-control-lg" placeholder="Tên" aria-label="Tên">
                     </div>
                     <div class="mb-3">
                       <input type="password" name="pass" class="form-control form-control-lg" placeholder="Mật khẩu" aria-label="Password">
@@ -69,7 +69,7 @@
                       <label class="form-check-label" for="rememberMe">Ghi nhớ mật khẩu</label>
                     </div>
                     <div class="text-center">
-                      <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Đăng nhập</button>
+                      <input type="submit" name="dangnhap" value="Đăng nhập" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
                     </div>
                   </form>
                 </div>

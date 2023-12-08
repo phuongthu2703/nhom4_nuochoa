@@ -63,9 +63,11 @@
                         
                         <div class="table-responsive">
                           <div class="row mb10 frmdsloai">
-                            <form action="index.php?act=listsp" method="post">
-                              <input type="text" name="kyw">
-                              <select name="category_ID">
+                            <form action="index.php?act=listsp" method="POST">
+                            <input type="text" class="btn btn-outline-warning"  name="kyw" placeholder="Nhập tên sản phẩm" style="width: 200px">
+                             <input type="submit" class="btn btn-warning" name="listok" value="Tìm">
+                            
+                              <select class="form-select" name="category_ID" style="width: 160px;">
                                   <option value="0" selected>Tất cả</option>
                                
                               <?php
@@ -75,11 +77,10 @@
                                        }
                                ?>
                     
-                              </select>
-                              <input type="submit" name="listok" value="GO">
+                              </select> 
                             </form>
 
-
+                          
 
 
                           </div>

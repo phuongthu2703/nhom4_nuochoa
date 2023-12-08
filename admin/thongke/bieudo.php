@@ -1,4 +1,17 @@
+<div class="container-fluid py-1 px-3">
+<nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">Trang chủ</a></li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Thống kê</li>
+          </ol>
+          <h6 class="font-weight-bolder text-white mb-0">Biểu đồ</h6>
+        </nav>
+        </div>
+
+        <div class="container-fluid py-4">
 <div class="row">
+<div class="col-12">
+<div class="card mb-4">
 <div id="piechart"></div>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -34,4 +47,5 @@ function drawChart() {
   chart.draw(data, options);
 }
 </script>
-</div>
+</div></div>
+</div></div>

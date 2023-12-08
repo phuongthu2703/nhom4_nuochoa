@@ -50,23 +50,26 @@ echo '
 
 <main>
       
-        <div class="container mt-4">
+<div class="container mt-6>
+<div class="row">
+
              <div class="card">
                 <div class="container-fliud">
                     
                         <div class="wrapper row">
-                            <div class="col-md-7">
+                            <div class="col-md-6">
                                
                                 <ul class="preview-thumbnail nav nav-tabs">
                                     <li class="">
                                         
-                                        <img src="'.$image.'" alt="" class="rounded" style="width: 600px;">
+                                        <img src="'.$image.'" alt="" class="rounded" style="width: 500px;">
                                         
                                     </li>
                                     
                                 </ul>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-6">
+                            <br>
                                 <h3 class="text-uppercase text-primary">'.$name.'</h3>
                                 <div class="text-danger">
                                     <div class="stars">
@@ -79,7 +82,7 @@ echo '
                                     <span class="review-no">'.$view.' view</span>
                                 </div>
                                 <p class="product-description">'.$description.'</p>
-                                <small class="text-muted">Giá cũ: <s><span>'.$price_old.'</span></s></small>
+                                <small class="text-muted">Giá giảm: <s><span>'.$price_old.'</span></s></small>
                                 <h4 class="price">Giá hiện tại: <span>'.$price.'</span></h4>
                                 <p class="vote"><strong>100%</strong> hàng <strong>Chính hãng</strong>, đảm bảo
                                     <strong>Chất
@@ -91,8 +94,13 @@ echo '
                                     <input type="number" class="form-control" id="soluong" name="soluong">
                                 </div>
                                 <div class="action">
-                                <button class="btn btn-danger"><i class="fas fa-cart-plus" style="margin-right: 5px;"></i>Thêm vào giỏ hàng</button>
-                                    <button class="btn btn-primary" href="#"><span class="fa fa-heart"></span></button>
+                                <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="product_ID" value="'.$product_ID.'">
+                                <input type="hidden" name="name" value="'.$name.'">
+                                <input type="hidden" name="image" value="'.$image.'">
+                                <input type="hidden" name="price" value="'.$price.'">
+                                <input type="submit" name="addtocart" class="btn btn-sm btn-danger" value="Thêm vào giỏ hàng">
+                                </form>
                                 </div>
                             </div>
 
@@ -100,37 +108,26 @@ echo '
                     
                 </div>
             </div>
-
             <div class="card">
-                <div class="container-fluid">
+                
                 <div class="card-header">
                 
-                    <span class="text-uppercase text-primary text-xxs font-weight-bolder" href="#">Chi tiết sản phẩm</span>
+                    <span class="text-uppercase text-primary text-xxs" >Chi tiết sản phẩm</span>
                  
                  
                
               </div>
               <div class="card-body">
                 
-                <p class="text-xxs font-weight-bolder">'.$description.'</p>
+                <p class="text-xxs">'.$description.'</p>
                 
               </div>
-                <div class="card-header">
                
-               
-                    <p class="text-uppercase text-primary text-xxs font-weight-bolder" href="#">Hướng dẫn sử dụng</p>
-                 
-                 
-               
-              </div>
-              <div class="card-body">
-             
-                <p class="=text-xxs font-weight-bolder">'.$use_pro.'</p>
-                
-              </div>
-                </div>
             </div>
-        </div>
+            
+            </div>
+
+            
         <!-- End block content -->
     </main>
 

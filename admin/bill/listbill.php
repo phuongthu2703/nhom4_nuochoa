@@ -1,8 +1,4 @@
-<style>
-    *{
-        font-size: 1vw;
-    }
-</style>
+
 
 <div class="container-fluid py-1 px-3">
 <nav aria-label="breadcrumb">
@@ -30,16 +26,22 @@
               ?>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
-            <form action="index.php?act=listbill" method="post">
+           
                        
-                                    <div class="input-group">
-                                    <input type="text" class="form-control"  name="kyw" placeholder="Nhập mã đơn hàng" style="width: 200px">
-                                    <input type="submit" class="btn btn-warning" name="listok" value="Tìm">
-                                     </div>
-            </form>
+                                  
+        
             <div class="table-responsive p-0">
             <table class="table align-items-center mb-0">
-                        <tr>
+                <tr>
+                    <th>  
+                        <div class="input-group">
+                                 <form action="index.php?act=listbill" method="post">
+                                    <input type="text" class="btn btn-outline-warning"  name="kyw" placeholder="Nhập mã đơn hàng" style="width: 200px">
+                                    <input type="submit" class="btn btn-warning" name="listok" value="Tìm">
+                                </form>
+                        </div>
+                    </th>
+                <tr>
                             
                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder">Mã đơn hàng</th>
                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder">Khách hàng</th>

@@ -9,6 +9,12 @@ function checkuser($name,$pass){
     return $sp;
 
 }
+function checkadmin($name,$pass){
+    $sql="select * from customers where name = '".$name."' AND pass = '".$pass."'";
+    $sp=pdo_query_one($sql);
+    return $sp;
+
+}
 function checkemail($email){
     $sql="select * from customers where email = '".$email."' ";
     $sp=pdo_query_one($sql);

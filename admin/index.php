@@ -263,11 +263,31 @@
 
 
 
-        case 'login':
-          include 'login.php';
-          break;
-
-
+          case 'dangnhap':
+            if(isset($_POST['dangnhap'])&&($_POST['dangnhap'])){
+                    
+              $name=$_POST['name'];
+              $pass=$_POST['pass'];
+              $checkuser=checkuser($name,$pass);
+              if(is_array($checkuser)){
+                $_SESSION['name']=$checkuser;
+               
+                $thongbao="Bạn đã đăng nhập thành công";
+                include "index.php";
+           
+             
+              
+            } else{
+           
+              include "dangnhap.php";
+              echo 'Đăng nhập admin thất bại';
+            }
+          }
+            
+           
+        
+            break;
+        
         case 'thongke':
           $listthongke = loadall_thongke();
           include "thongke/list.php";
