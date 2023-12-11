@@ -1,41 +1,43 @@
+<div class="container-fluid py-4">
 <div class="row">
-            <div class="row formtitle">
-                <h1>THÊM MỚI USER</h1>
-            </div>
-            <div class="row formcontent">
+<div class="card mb-4">
+<div class="card-header pb-0">
+            <h6 class="text-center">Thêm tài khoản</h6>
+            
+            <div class="card-body px-0 pt-0 pb-2">
                 <form action="index.php?act=addtk" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">           
                     <div class="kh-all">
                         <div>
                             <div class="row mb10 kh-one">
-                            <strong>Tên tài khoản</strong>   <br>
-                                <input type="text" name="tenuser" id="tenuser">
+                            <label class="text-uppercase text-dark text-xs font-weight-bolder opacity-7">Tên tài khoản</label>
+                                <input class="form-control" type="text" name="name" id="tenuser">
                                 <p style="color: red;" id="tenuser-err"></p>
                             </div>
                             <div class="row mb10 kh-one">
-                            <strong>Mật khẩu</strong> <br>
-                                <input type="text" name="mkuser" id="mkuser">
+                            <label class="text-uppercase text-dark text-xs font-weight-bolder opacity-7">Mật khẩu</label>
+                                <input class="form-control" type="text" name="pass" id="mkuser">
                                 <p style="color: red;" id="mkuser-err"></p>
                             </div>
                             <div class="row mb10 kh-one">
-                            <strong>Email</strong> <br>
-                                <input type="email" name="emailuser" id="emailuser">
+                            <label class="text-uppercase text-dark text-xs font-weight-bolder opacity-7">Email</label>
+                                <input class="form-control" type="email" name="email" id="emailuser">
                                 <p style="color: red;" id="emailuser-err"></p>
                             </div>
                         </div>
                         <div>
                             <div class="row mb10 kh-one">
-                            <strong>Địa chỉ</strong> <br>
-                                <input type="text" name="aduser" id="aduser">
+                            <label class="text-uppercase text-dark text-xs font-weight-bolder opacity-7">Địa chỉ</label>
+                                <input class="form-control" type="text" name="address" id="aduser">
                                 <p style="color: red;" id="aduser-err"></p>
                             </div>
                             <div class="row mb10 kh-one">
-                            <strong>Số điện thoại</strong>  <br>
-                                <input type="number" name="phoneuser" id="phoneuser">
+                            <label class="text-uppercase text-dark text-xs font-weight-bolder opacity-7">Số điện thoại</label>
+                                <input class="form-control" type="text" name="phone" id="phoneuser">
                                 <p style="color: red;" id="phoneuser-err"></p>
                             </div>
                             <div class="row mb10 kh-one">
-                            <strong>Loại Tài khoản(1:Admin 0:Khách)</strong>  <br>
-                                <input type="number" name="role" id="role">
+                            <strong>Vai trò(1:Admin 0:Khách)</strong>  <br>
+                                <input class="form-control" type="number" name="role" id="role">
                                 <p style="color: red;" id="role-err"></p>
                                 <p style="color: red;" id="role-err2"></p>
                             </div>
@@ -43,11 +45,16 @@
                     </div>
                     
                     
-                    <div class="row mb10 mt10" >
-                        <input type="submit" class="mr5" name="themmoi" onclick="validateForm()" value="THÊM MỚI">
-                        <input type="reset" class="mr5" value="NHẬP LẠI">
-                        <a href="index.php?act=dskh"><input type="button" value="DANH SÁCH"></a>    
-                    </div>
+                    <div class="text-center">
+                
+                
+                <input style="background-color:lightcoral; color: beige; border: none; height: 40px; border-radius: 5px;" type="submit" name="themmoi" value="Thêm mới">
+                
+                
+                <input style="background-color:lightseagreen; color: beige; border: none; height: 40px; border-radius: 5px;"  type="reset" value="Nhập lại">
+                <a href="index.php?act=dskh">
+                    <input  style="background-color:coral; color: beige; border: none; height: 40px; border-radius: 5px;" type="button" value="Danh sách"></a>
+            </div>
                     <?php
                         if(isset($thongbao) &&($thongbao != "")){
                             echo $thongbao;
@@ -57,7 +64,7 @@
             </div>
     </div>
 </div>
-
+</div>
 <script>
     function validateForm() {
         let tenuser = document.getElementById("tenuser").value;

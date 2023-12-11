@@ -1,3 +1,5 @@
+
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -78,7 +80,7 @@
             try {
               delete_danhmuc($category_ID);
             } catch (\Throwable $th) {
-              $thongbao = "Không thể xóa! Danh mục đã có sản phẩm!";
+              $thongbao =  "Không thể xóa! Danh mục đã có sản phẩm!";
             }
           }
           $listdanhmuc = loadall_danhmuc();
@@ -220,7 +222,24 @@
           $listtaikhoan = loadall_taikhoan();
           include "taikhoan/list.php";
           break;
-
+          case 'addtk':
+            if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
+              $name = $_POST['name'];
+              $pass = $_POST['pass'];
+              $email = $_POST['email'];
+              $address = $_POST['address'];
+              $phone = $_POST['phone'];
+              $role = $_POST['role'];
+  
+  
+              //function
+              insert_taikhoan1($name,$pass, $email, $address, $phone, $role);
+              $thongbao = "Thêm thành công";
+            }
+  
+            include "taikhoan/add.php";
+            break;
+  
 
         case 'listbill':
           if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
@@ -263,30 +282,7 @@
 
 
 
-          case 'dangnhap':
-            if(isset($_POST['dangnhap'])&&($_POST['dangnhap'])){
-                    
-              $name=$_POST['name'];
-              $pass=$_POST['pass'];
-              $checkuser=checkuser($name,$pass);
-              if(is_array($checkuser)){
-                $_SESSION['name']=$checkuser;
-               
-                $thongbao="Bạn đã đăng nhập thành công";
-                include "index.php";
-           
-             
-              
-            } else{
-           
-              include "dangnhap.php";
-              echo 'Đăng nhập admin thất bại';
-            }
-          }
-            
-           
-        
-            break;
+         
         
         case 'thongke':
           $listthongke = loadall_thongke();

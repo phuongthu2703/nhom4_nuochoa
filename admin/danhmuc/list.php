@@ -37,7 +37,7 @@
                 <table class="table align-items-center mb-0">
                 
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+                     
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Mã loại</th>
 
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Tên loại</th>
@@ -60,12 +60,7 @@
                       $image = "no photo";
                     }
                     echo'<tr>
-                      <td>
-                        
-                        <input type="checkbox" name="" id="">
-                        
-                      </td>
-
+                     
                       <td>
                         <p class="text-xs font-weight-bold mb-0">'.$category_ID.'</p>
                        
@@ -76,10 +71,10 @@
                       <p class="text-xs font-weight-bold mb-0">'.$name.'</p>
                       </td>
                       <td class="align-middle text-center">
-                      <a href="'.$suadm.'"><span class="badge badge-sm bg-gradient-success">Sửa</span></a>
+                      <a class="btn btn-link text-success text-gradient px-3 mb-0" href="'.$suadm.'"><i class="fas fa-pencil-alt text-dark me-2"></i>Sửa</a>
                       </td>
                       <td class="align-middle">
-                      <a href="'.$xoadm.'"><span class="badge badge-sm bg-gradient-danger">Xóa</span></a>
+                      <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="'.$xoadm.'"><i class="far fa-trash-alt me-2"></i>Xóa</a>
                         
                         
                       </td>
@@ -91,12 +86,10 @@
                
                 </table>
                 <br>
-                <tr>
-                       <td> <input  type="button" class="btn btn-outline-success" value="Chọn tất cả" style="width:min-content"></td> 
-                         <td><input type="button" class="btn btn-outline-warning" value="Bỏ chọn tất cả" style="width:min-content"></td>
-                          <td><input type="button" class="btn btn-outline-danger" value="Xóa các mục đã chọn" style="width:min-content"></td>
-                          <td><a href="index.php?act=adddm"><input type="button" class="btn btn-outline-primary" value="Nhập thêm"></a></td>
-                    </tr>
+               
+                    <div class="text-center"> 
+                          <td><a href="index.php?act=adddm"><input type="button" class="btn btn-primary" value="Nhập thêm"></a></td>
+                          </div> 
 
               </div>
             </div>

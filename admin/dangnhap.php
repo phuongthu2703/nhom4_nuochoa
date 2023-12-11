@@ -1,17 +1,23 @@
-<!--
-=========================================================
-* Argon Dashboard 2 - v2.0.4
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
+<?php
+    session_start();
+    include "../model/pdo.php";
+    include "../model/taikhoan.php";
+    if(isset($_POST["dangnhap"])){
+      $name = $_POST["name"];
+      $pass = $_POST["pass"];
+      $user = checkuser($name,$pass);
+      if(isset($user)&&(is_array($user)) && (count($user) > 0)){
+        extract($user);
+        if($role == 1){
+          header('Location: index.php');
+        }else{
+          $thongbao = "Tai khoan nay khong co quyen dang nhap trang quan tri";
+        }
+    }else {
+      $thongbao ="Tai khoan nay khong ton tai";
+    }
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,12 +58,17 @@
           <div class="row">
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
               <div class="card card-plain">
+              
                 <div class="card-header pb-0 text-start">
+                 <?php if(isset($thongbao)&&($thongbao)!=0){
+                          echo "'.$thongbao.'";
+                 }
+                 ?>
                   <h4 class="font-weight-bolder">Đăng nhập</h4>
                   <p class="mb-0">Điền email và mật khẩu để đăng nhập admin</p>
                 </div>
                 <div class="card-body">
-                  <form role="form" action="index.php?act=dangnhap" method="POST">
+                  <form role="form" action="dangnhap.php" method="POST">
                     <div class="mb-3">
                       <input type="text" name="name" class="form-control form-control-lg" placeholder="Tên" aria-label="Tên">
                     </div>
@@ -73,12 +84,7 @@
                     </div>
                   </form>
                 </div>
-                <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                  <p class="mb-4 text-sm mx-auto">
-                    Bạn chưa có tài khoản?
-                    <a href="javascript:;" class="text-primary text-gradient font-weight-bold">Đăng ký</a>
-                  </p>
-                </div>
+                
               </div>
             </div>
             <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">

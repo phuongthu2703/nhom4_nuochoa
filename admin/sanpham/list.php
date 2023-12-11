@@ -1,28 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Admin
-  </title>
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/admin/images/logo-small.png">
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <!-- CSS Files -->
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
-</head>
 
 
 
@@ -88,7 +66,7 @@
                         <thead>
                 <tr>
                     
-                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Mã sản phẩm</th>
+                <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder">Mã sản phẩm</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Tên sản phẩm</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Hình ảnh</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Giá</th>
@@ -111,8 +89,8 @@
                         }
                         echo '<tr>
                              
-                                <td class="align-middle text-center"> <p class="text-xs font-weight-bold mb-0">'.$product_ID.'</p></td>
-                                <td><p class="text-xs font-weight-bold mb-0">'.$name.'</p></td>
+                        <td class="align-middle text-center text-sm">'.$product_ID.'</td>
+                        <td class="text-xs font-weight-bold mb-0">'.$name.'</td>
                                 <td><div class="d-flex px-2 py-1">
                                 <div class="align-middle text-center">
                                   '.$image.'
@@ -126,8 +104,8 @@
                               
                                 
                                
-                                <td class="align-middle"><a href="'.$suasp.'"><input type="button" class="btn btn-outline-success" value="Sửa"></a> 
-                                <a href="'.$xoasp.'"><input type="button" class="btn btn-outline-danger" value="Xóa"> </a></td>
+                                <td class="align-middle">  <a class="btn btn-link text-success text-gradient px-3 mb-0" href="'.$suasp.'"><i class="fas fa-pencil-alt text-dark me-2"></i>Sửa</a>
+                                <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="'.$xoasp.'"><i class="far fa-trash-alt me-2"></i>Xóa</a>
                             </tr>';
                     }
                 ?>
@@ -135,12 +113,9 @@
             </table>
                         </div>
                         </div>
-                        <td colspan="5">
-                         <input  type="button" class="btn btn-outline-success" value="Chọn tất cả">
-                          <input type="button" class="btn btn-outline-warning" value="Bỏ chọn tất cả">
-                          <input type="button" class="btn btn-outline-danger" value="Xóa các mục đã chọn">
-                          <a href="index.php?act=addsp"><input type="button" class="btn btn-outline-primary" value="Nhập thêm"></a>
-                    </td>
+                        <div class="text-center"> 
+                          <td><a href="index.php?act=addsp"><input type="button" class="btn btn-primary" value="Nhập thêm"></a></td>
+                          </div> 
                          
 
                     </div>

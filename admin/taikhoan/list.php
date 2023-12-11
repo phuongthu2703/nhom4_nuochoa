@@ -32,7 +32,7 @@
                         <div class="table-responsive">
                         <table class="table align-items-center mb-0">
                 <tr>
-                    <th></th>
+                   
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder">ID khách hàng</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder">Tên đăng nhập</th>
                     <!-- <th class="text-uppercase text-secondary text-xxs font-weight-bolder">Mật khẩu</th> -->
@@ -49,7 +49,7 @@
                         $xoatk = "index.php?act=xoatk&customer_ID=".$customer_ID;
 
                         echo '<tr>
-                                <td><input type="checkbox" name="" id=""></td>
+                                
                                 <td class="text-secondary text-xs font-weight-bold">'.$customer_ID.'</td>
                                 <td class="text-xs font-weight-bold mb-0">'.$name.'</td>
                                 
@@ -66,12 +66,9 @@
             </table>
                         </div>
                         </div>
-                        <!-- <td colspan="5">
-                         <input  type="button" class="btn btn-outline-success" value="Chọn tất cả">
-                          <input type="button" class="btn btn-outline-warning" value="Bỏ chọn tất cả">
-                          <input type="button" class="btn btn-outline-danger" value="Xóa các mục đã chọn">
-                          <a href="index.php?act=adddm"><input type="button" class="btn btn-outline-primary" value="Nhập thêm"></a>
-                    </td> -->
+                        <div class="text-center"> 
+                          <td><a href="index.php?act=addtk"><input type="button" class="btn btn-primary" value="Nhập thêm"></a></td>
+                          </div> 
                          
 
                     

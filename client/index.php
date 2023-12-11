@@ -1,6 +1,9 @@
 
-
+<?php
+session_start();
+?>
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <title>CandyCloud</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -19,7 +22,7 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -28,7 +31,7 @@
 </head>
 
 <?php 
-session_start();
+
 include "../model/pdo.php";
 include  "../model/danhmuc.php";
 include  "../model/sanpham.php";
@@ -145,9 +148,11 @@ $dstk=loadall_taikhoan_admin();
                       
                     } else{
                       $thongbao= "Tài khoản không tồn tại. Vui lòng kiểm tra hoặc đăng ký!";
-                      include "components/taikhoan/dangky.php";
+                      include "components/taikhoan/dangnhap.php";
                     }
+                    
                   }
+                  include "components/taikhoan/dangnhap.php";
                     
                     break;
                     case 'edit_taikhoan':

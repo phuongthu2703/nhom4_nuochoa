@@ -9,7 +9,7 @@
                       
     <!-- Contact Start -->
     <div class="container-fluid py-5">
-      
+   
         <div class="row justify-content-center">
                
     <div class="contact-form bg-light rounded">
@@ -48,38 +48,48 @@ echo'
                 </div> </div>  '   ;         
         ?>
         
+                 
                 <?php
       } else {
         ?>
-        <form action="index.php?act=dangnhap" method="post">
-          <div class="form-group row">
-            <label>Tên đăng nhập</label>
-            <input class="form-control" type="text" name="name" required>
-          </div>
-
-          <div class="form-group row">
-            <label>Mật khẩu</label>
-
-            <input class="form-control" type="password" name="pass" required>
-          </div>
-          <div class="form-check">
-
-
-            <input class="form-check-input" type="checkbox" value="" id="" name="">
-            <label class="form-check-label">
-              Ghi nhớ tài khoản?
-            </label>
-          </div>
-          <div class="form-group row">
-            <input class="form-control" type="submit" value="Đăng nhập" name="dangnhap">
-          </div>
-        </form>
-        <li>
-          <a href="#">Quên mật khẩu</a>
-        </li>
-        <li>
-          <a href="index.php?act=dangky">Đăng ký thành viên</a>
-        </li>
+         <?php
+                       
+                       if(isset($thongbao)&&($thongbao!= "")){
+                           echo '<div class="alert alert-primary" role="alert">
+                          '.$thongbao.'!
+                         </div>';
+                       }
+                  ?>
+      <div class="">
+                <div class="">
+                  <h4 class="font-weight-bolder">Đăng nhập</h4>
+                  <p class="mb-0">Nhập tên và mật khẩu để đăng nhập</p>
+                </div>
+                <div class="card-body">
+                  <form role="form" action="index.php?act=dangnhap" method="post">
+                    <div class="mb-3">
+                      <input type="text" name="name" class="form-control form-control-lg" placeholder="Tên" aria-label="Name">
+                    </div>
+                    <div class="mb-3">
+                      <input type="password" name="pass" class="form-control form-control-lg" placeholder="Mật khẩu" aria-label="Password">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Ghi nhớ mật khẩu</label>
+                    </div>
+                    <div class="text-center">
+                     <input type="submit" name="dangnhap" value="Đăng nhập" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
+                    </div>
+                  </form>
+                </div>
+                <div class="text-center pt-0 px-lg-2 px-1">
+                  <p class="mb-4 text-sm mx-auto">
+                    Bạn chưa có tài khoản
+                    <a href="index.php?act=dangky" class="text-primary text-gradient font-weight-bold">Đăng ký</a>
+                  </p>
+                </div>
+              </div>
+            </div>
       <?php } ?>
             </div>
         </div>

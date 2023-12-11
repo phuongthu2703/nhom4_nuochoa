@@ -19,10 +19,11 @@
          
         
 echo'
-<a class="text-white px-3" href="index.php?act=dangky">
+<a class="text-white px-3" >
                             
-'.$name.'
-</a>
+'.$name.'</a>
+<a class="text-white px-3" href="index.php?act=thoat"><i style="margin-right: 6px;" class="fa fa-sign-out"></i>Đăng xuất</a>
+
 '   ;         
         ?>
         
@@ -32,7 +33,7 @@ echo'
       
         
         
-          <a class="text-white px-3" href="index.php?act=dangky">Đăng nhập</a>
+          <a class="text-white px-3" href="index.php?act=dangnhap">Đăng nhập</a>
         
       <?php } ?>
                      

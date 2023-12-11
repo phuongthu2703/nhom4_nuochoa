@@ -108,7 +108,7 @@ echo '
     
        
        <a href="index.php?act=edit_taikhoan">
-        <button class="btn btn-primary btn-sm ms-auto">Chỉnh sửa</button>
+        <button class="btn btn-primary btn-sm ms-auto"><i class="fas fa-user-cog" style="margin-right: 6px;"></i>Chỉnh sửa</button>
         </a>
       </div>
     </div>

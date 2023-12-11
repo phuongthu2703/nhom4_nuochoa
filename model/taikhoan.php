@@ -3,6 +3,10 @@ function insert_taikhoan($email,$name,$pass){
     $sql="insert into customers(email,name,pass) values('$email','$name','$pass')";
     pdo_execute($sql);
 }
+function insert_taikhoan1($name, $pass, $email, $address, $phone, $role){
+    $sql="insert into customers(name, pass, email, address, phone, role) values('$name', '$pass', '$email', '$address', '$phone', '$role')";
+    pdo_execute($sql);
+}
 function checkuser($name,$pass){
     $sql="select * from customers where name = '".$name."' AND pass = '".$pass."' ";
     $sp=pdo_query_one($sql);

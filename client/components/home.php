@@ -5,7 +5,7 @@
   padding: 0;
 }
 </style>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 <div class="container-fluid p-0 mb-5 pb-5">
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
@@ -98,9 +98,10 @@
 echo'
           
 <div class="team-item">
+<a href="'.$linksp.'">  
 <div class="team-img mx-auto">
-                        <img src="'.$image.'" class="rounded-circle w-100 h-100" style="style="object-fit: cover;">
-                    </div>
+                     <img src="'.$image.'" class="rounded-circle w-100 h-100" style="style="object-fit: cover;">
+                    </div></a>
                     <a href="'.$linksp.'">
                     <h3 class="font-weight-bold text-primary mt-3 mb-4">'.$name.'</h3>
                     </a>
@@ -113,11 +114,12 @@ echo'
            
           <?php if($role==1){ ?>
          
-            <a href="../admin/index.php" class="list-group-item list-group-item-action list-group-item-secondary">Đăng nhập Admin</a>
+            <a href="../admin/dangnhap.php" class="list-group-item list-group-item-action list-group-item-secondary">Đăng nhập Admin</a>
          
             <?php } ?>
           
-            <a href="index.php?act=thoat" class="list-group-item list-group-item-action list-group-item-secondary">Đăng xuất</a>
+            
+            <a href="index.php?act=thoat"><i style="margin-right: 6px;" class="fa fa-sign-out"></i>Đăng xuất</a>
          
           </div>
                   
